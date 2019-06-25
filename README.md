@@ -5,4 +5,4 @@ Yarn install
 gatsby develop
 
 
-https://zpl.io/2vOq1Or
+Design -> https://zpl.io/2vOq1Or
