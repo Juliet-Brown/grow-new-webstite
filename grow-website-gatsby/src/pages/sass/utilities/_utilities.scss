@@ -1,0 +1,33 @@
+// ----------------------------------------------------------------------------
+// Utilities
+// ----------------------------------------------------------------------------
+
+// Margins
+.uMarginBottomS {
+  margin-bottom: $spacing-small;
+}
+
+.uMarginBottomM {
+  margin-bottom: $spacing-base;
+}
+
+.uMarginBottomML {
+  margin-bottom: $spacing-medium;
+}
+
+.uMarginBottomL {
+  margin-bottom: $spacing-large;
+}
+
+// Widths
+.uWidthSixtyPercent {
+  @include medium {
+    width: 60%;
+  }
+}
+
+.uWidthEightyPercent {
+  @include medium {
+    width: 80%;
+  }
+}

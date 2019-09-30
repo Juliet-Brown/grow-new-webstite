@@ -1,0 +1,16 @@
+// ----------------------------------------------------------------------------
+// Gutters
+// ----------------------------------------------------------------------------
+
+.gutters {
+  margin-right: 5%;
+  margin-left: 5%;
+  @include small {
+    margin-right: 7%;
+    margin-left: 7%;
+  }
+  @include medium {
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+}

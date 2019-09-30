@@ -1,0 +1,16 @@
+// ----------------------------------------------------------------------------
+// Page
+// ----------------------------------------------------------------------------
+
+html {
+  font-family: $font-family-sans-serif;
+  font-size: $base-font-size;
+  color: $color-grey-dark;
+  -webkit-tap-highlight-color: transparent;
+  height: 100%;
+}
+
+body {
+  position: relative;
+  margin: 0;
+}
