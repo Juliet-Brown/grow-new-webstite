@@ -1,7 +1,19 @@
-# grow-new-webstite
+![Grow](./grow-logo.png)
 
-Yarn install
+# Grow
 
-then run : yarn develop
+Welcome to the website for Grow!
 
-Design -> https://zpl.io/2vOq1Or
+## Getting started
+
+Run the following commands:
+
+1. `cd grow-website-gatsby`
+2. `yarn install`
+3. `gatsby develop`
+
+You should then be able to visit http://localhost:8000/
+
+---
+
+[Design](https://zpl.io/2vOq1Or)
