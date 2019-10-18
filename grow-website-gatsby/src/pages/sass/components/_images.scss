@@ -1,0 +1,16 @@
+// ----------------------------------------------------------------------------
+// Images
+// ----------------------------------------------------------------------------
+
+.imageMedium {
+  margin-bottom: $spacing-base;
+  margin-left: -6%;
+  width: 112%;
+  @include small {
+    margin-left: 0;
+    width: 100%;
+  }
+  @include medium {
+    width: 80%;
+  }
+}

@@ -1,0 +1,42 @@
+// ----------------------------------------------------------------------------
+// Grid
+// ----------------------------------------------------------------------------
+
+.grid {
+  @include small {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.gridItemContainer {
+  width: 100%;
+  margin-bottom: $spacing-xlarge;
+  @include small {
+    width: 47%;
+  }
+  @include xlarge {
+    width: 22%;
+  }
+}
+
+.gridItem {
+  @include aspect-ratio(384, 297);
+  margin-bottom: $spacing-base;
+  width: 112%;
+  margin-left: -6%;
+  @include small {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+.gridImage {
+  margin-left: -6%;
+  width: 112%;
+  @include small {
+    margin-left: 0;
+    width: 100%;
+  }
+}
