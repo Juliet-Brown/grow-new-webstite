@@ -157,9 +157,10 @@ export default class IndexPage extends React.Component<IndexPageProps, {}> {
                 <div className={styles.uMarginBottomML}>
                   <div className={styles.uWidthSixtyPercent}>
                     <p className={styles.paragraphSmall}>
-                      We’re the team of dedicated, approachable and welcoming
-                      women behind Grow. We all work at Springload and run Grow
-                      in our own time.
+                      We’re the dedicated, approachable and welcoming team
+                      behind Grow. We all work at Springload and have been
+                      generously given time and support during our work hours to
+                      make Grow what it is.
                     </p>
                     <p className={styles.paragraphSmall}>
                       Not all of us code (but most of us do). And not all of us
@@ -337,6 +338,13 @@ export default class IndexPage extends React.Component<IndexPageProps, {}> {
                   <div className={styles.headingLarge}>
                     Frequently asked questions
                   </div>
+                  <div
+                    className={`${styles.headingXSmall} ${
+                      styles.uMarginBottomM
+                    }`}
+                  >
+                    Applicants
+                  </div>
                   <div className={styles.grid}>
                     <div className={styles.gridItemContainer}>
                       <div className={styles.headingSmall}>
@@ -346,11 +354,10 @@ export default class IndexPage extends React.Component<IndexPageProps, {}> {
                       <div className={styles.paragraphSmall}>
                         <p>
                           We try to pair two applicants to every coach who’s
-                          available. We think it’s important you get the chance
-                          to ask lots of questions and get one-on-one coaching.
-                          Around twenty applicants fit comfortably in the space
-                          Springload has generously let us use. For our first
-                          workshop, we received over a hundred applicants.
+                          available. Around twenty applicants fit comfortably in
+                          the space Springload has generously let us use. For
+                          our first workshop, we received over a hundred
+                          applicants.
                         </p>
                       </div>
                     </div>
@@ -362,43 +369,23 @@ export default class IndexPage extends React.Component<IndexPageProps, {}> {
                         <p>
                           Before we open applications to everyone, we give
                           priority to the applicants who missed out on the last
-                          workshop — so it definitely pays to be patient! Even
-                          if you miss out the first time, you’ll probably get a
-                          chance to attend a later workshop. Once you’ve
-                          applied, we won’t need your full application again.
-                          We’ll just email to see if you’re still keen when
-                          applications open for the next workshop.
-                        </p>
-                      </div>
-                    </div>
-                    <div className={styles.gridItemContainer}>
-                      <div className={styles.headingSmall}>
-                        Can I apply if I’m a man?
-                      </div>
-                      <div className={styles.paragraphSmall}>
-                        <p>
-                          Grow is geared towards providing a space for women and
-                          non-binary people to learn the basics of coding. But
-                          we’d definitely encourage you to make use of some of
-                          the awesome online learning platforms that are out
-                          there if you’re curious about learning to code (see
-                          below).
+                          workshop. Even if you miss out the first time, you’ll
+                          probably get a chance to attend a later workshop.
                         </p>
                       </div>
                     </div>
                     <div className={styles.gridItemContainer}>
                       <div className={styles.headingSmall}>
                         Why a workshop specifically for women and non-binary
-                        people? Why not cater to everyone?
+                        people?
                       </div>
                       <div className={styles.paragraphSmall}>
                         <p>
-                          There’s still a massive gender gap in STEM, and we
-                          believe the way we’re going to have the best shot at
-                          closing that gap is by creating spaces for learning to
-                          code that are safe and welcoming for those who are
-                          underrepresented. We are all for doing what we can to
-                          create a more diverse tech sector!
+                          There’s still a huge gender gap in STEM, and we
+                          believe creating spaces for learning to code for those
+                          who are underrepresented will help us close that gap.
+                          We are all for doing what we can to create a more
+                          diverse tech sector!
                         </p>
                       </div>
                     </div>
@@ -414,6 +401,15 @@ export default class IndexPage extends React.Component<IndexPageProps, {}> {
                         </p>
                       </div>
                     </div>
+                  </div>
+                  <div
+                    className={`${styles.headingXSmall} ${
+                      styles.uMarginBottomM
+                    }`}
+                  >
+                    What You Need
+                  </div>
+                  <div className={styles.grid}>
                     <div className={styles.gridItemContainer}>
                       <div className={styles.headingSmall}>
                         What if I don’t have a laptop?
@@ -434,25 +430,22 @@ export default class IndexPage extends React.Component<IndexPageProps, {}> {
                       </div>
                       <div className={styles.paragraphSmall}>
                         <p>
-                          Yes! We know you’ll probably get hungry between 6 and
-                          9pm, so we’ll be providing tasty snacks to help keep
-                          you functioning at full capacity.
+                          Yes! We know you’ll probably get hungry, so we’ll be
+                          providing tasty snacks to help keep you functioning at
+                          full capacity. Our application form has a section
+                          asking you about your dietary requirements.
                         </p>
                       </div>
                     </div>
-                    <div className={styles.gridItemContainer}>
-                      <div className={styles.headingSmall}>
-                        I’m gluten free/vegan/paleo! Do I need to bring my own
-                        food?
-                      </div>
-                      <div className={styles.paragraphSmall}>
-                        <p>
-                          Nope, our application form has a section asking you
-                          about your dietary requirements, and we make sure we
-                          cater to those who will be attending the workshop.
-                        </p>
-                      </div>
-                    </div>
+                  </div>
+                  <div
+                    className={`${styles.headingXSmall} ${
+                      styles.uMarginBottomM
+                    }`}
+                  >
+                    After the Workshop
+                  </div>
+                  <div className={styles.grid}>
                     <div className={styles.gridItemContainer}>
                       <div className={styles.headingSmall}>
                         What will I achieve by the end of the workshop?
@@ -460,10 +453,10 @@ export default class IndexPage extends React.Component<IndexPageProps, {}> {
                       <div className={styles.paragraphSmall}>
                         <p>
                           You’ll have a basic grasp of what HTML, CSS, and
-                          JavaScript are and what they do in front-end web
-                          development. You’ll have put them to use in a fun,
-                          challenging exercise and seen how they can be used to
-                          build some cool stuff on the interwebs!
+                          JavaScript are and what they do in web development.
+                          You’ll have used them in a fun, challenging exercise
+                          and seen how they can be used to build cool stuff on
+                          the interwebs!
                         </p>
                       </div>
                     </div>
@@ -477,22 +470,6 @@ export default class IndexPage extends React.Component<IndexPageProps, {}> {
                           keep up with those who have Grown with you. And maybe
                           you’ll decide to keep learning to code by making use
                           of some of the online resources we recommend!
-                        </p>
-                      </div>
-                    </div>
-                    <div className={styles.gridItemContainer}>
-                      <div className={styles.headingSmall}>
-                        What’s your relationship to Springload?
-                      </div>
-                      <div className={styles.paragraphSmall}>
-                        <p>
-                          All the core Grow team members work at Springload, and
-                          Springload has been very generous in providing us with
-                          space to run our workshops in, food for our
-                          participants, and some of our work hours for running
-                          the behind-the-scenes parts of Grow. We sometimes have
-                          a few non- Springloaders kindly help us out on
-                          workshop nights by acting as coaches.
                         </p>
                       </div>
                     </div>
