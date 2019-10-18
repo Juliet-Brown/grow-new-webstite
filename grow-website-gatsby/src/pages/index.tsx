@@ -5,6 +5,7 @@ import * as styles from "./Index.module.scss"
 
 import growLogo from "../images/grow-logo.png"
 import growBannerImage from "../images/grow-banner-image.jpg"
+import workshopImage from "../images/workshop-image.png"
 import email from "../images/email.svg"
 import instagram from "../images/instagram.svg"
 import phone from "../images/phone.svg"
@@ -108,14 +109,15 @@ export default class IndexPage extends React.Component<IndexPageProps, {}> {
               <div className={styles.sectionWorkshop}>
                 <div className={styles.headingLarge}>Workshops</div>
                 <div className={styles.headingXSmall}>Upcoming Event</div>
-                <img
-                  className={styles.imageMedium}
-                  src={
-                    "https://res.cloudinary.com/juliet-brown/image/upload/v1560656531/rectangle_cbnyjr.svg"
-                  }
-                  alt="rectangle"
-                />
-
+                <div className={styles.workshopImageContainer}>
+                  <div className={styles.ratioContent}>
+                    <img
+                      className={styles.workshopImage}
+                      src={workshopImage}
+                      alt="Participants write code at a Grow workshop"
+                    />
+                  </div>
+                </div>
                 <div className={styles.headingMedium}>
                   Introduction to coding basics
                 </div>
