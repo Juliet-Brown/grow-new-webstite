@@ -3,17 +3,30 @@ import Moment from "moment"
 import * as styles from "../Index.module.scss"
 import AnchorLink from "react-anchor-link-smooth-scroll"
 
-export default class Workshop extends React.Component {
+type Props = {
+  imageSrc: string,
+  name: string,
+  dateTime: string,
+  locationName: string,
+  locationAddress: string,
+  description: string[]
+}
+
+export default class Workshop extends React.Component<Props> {
   public render() {
     Moment.locale("en")
 
     return (
       <div>
-        <img
-          className={styles.imageMedium}
-          src={this.props.imageSrc}
-          alt="rectangle"
-        />
+        <div className={styles.workshopImageContainer}>
+          <div className={styles.ratioContent}>
+            <img
+              className={styles.workshopImage}
+              src={this.props.imageSrc}
+              alt="Participants write code at a Grow workshop"
+            />
+          </div>
+        </div>
         <div className={styles.headingMedium}>{this.props.name}</div>
         <div className={styles.uWidthSixtyPercent}>
           <div className={styles.headingSubtitle}>
