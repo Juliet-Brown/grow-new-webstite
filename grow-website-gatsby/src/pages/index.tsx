@@ -6,6 +6,7 @@ import * as styles from "./Index.module.scss"
 import growLogo from "../images/grow-logo.png"
 import growBannerImage from "../images/grow-banner-image.jpg"
 import email from "../images/email.svg"
+import growSpringload from "../images/grow-springload.svg"
 import instagram from "../images/instagram.svg"
 import phone from "../images/phone.svg"
 import twitter from "../images/twitter.svg"
@@ -92,7 +93,7 @@ export default class IndexPage extends React.Component<IndexPageProps, {}> {
                 <p
                   className={`${styles.paragraphLarge} ${
                     styles.uWidthEightyPercent
-                  }`}
+                    }`}
                 >
                   Grow is a series of self-contained workshops for women who
                   want to learn the basics of web development. Each workshop
@@ -134,7 +135,7 @@ export default class IndexPage extends React.Component<IndexPageProps, {}> {
                   <p
                     className={`${styles.paragraphSmall} ${
                       styles.uMarginBottomM
-                    }`}
+                      }`}
                   >
                     All you need is your laptop and yourself — no specialist
                     software or programs. There’ll be food and drink to keep you
@@ -588,10 +589,28 @@ export default class IndexPage extends React.Component<IndexPageProps, {}> {
               <AnchorLink className={styles.footerLink} href="#contact">
                 Contact
               </AnchorLink>
+              <div className={styles.flex}>
+                <a
+                  className={styles.footerSocialLink}
+                  target="_blank"
+                  href="https://www.instagram.com/growbyspringload"
+                >
+                  <img src={twitter} />
+                </a>
+
+                <a
+                  className={styles.footerSocialLink}
+                  target="_blank"
+                  href="https://www.instagram.com/growbyspringload"
+                >
+                  <img src={instagram} />
+                </a>
+              </div>
+              <img src={growSpringload} />
             </div>
           </div>
         </div>
-      </div>
+      </div >
     )
   }
 }

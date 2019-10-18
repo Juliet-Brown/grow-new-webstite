@@ -17,15 +17,26 @@
   }
 }
 
+.footerSocialLink {
+  margin: 0 10px;
+  &:hover {
+    border-bottom: 0;
+  }
+}
+
 .footerLink {
   font-family: $font-family-sans-serif;
-  font-size: $spacing-base;
-  font-weight: bold;
+  font-size: 18px;
+  font-weight: 700;
   color: $color-white;
   text-decoration: none;
   margin-bottom: $spacing-base;
   @include small {
     margin-right: $spacing-xlarge;
     margin-bottom: 0;
+  }
+
+  &:hover {
+    border-bottom: 0;
   }
 }
