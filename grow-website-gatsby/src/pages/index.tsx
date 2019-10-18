@@ -4,7 +4,6 @@ import AnchorLink from "react-anchor-link-smooth-scroll"
 import Helmet from "react-helmet"
 import * as styles from "./Index.module.scss"
 import Contact from "./components/Contact/Contact"
-
 import Workshop from "./components/workshop"
 
 import growLogo from "../images/grow-logo.png"
@@ -118,7 +117,7 @@ export default class IndexPage extends React.Component<IndexPageProps, {}> {
                 <div className={styles.headingLarge}>Workshops</div>
                 <div className={styles.headingXSmall}>Upcoming Event</div>
                 <Workshop
-                  imageSrc="https://res.cloudinary.com/juliet-brown/image/upload/v1560656531/rectangle_cbnyjr.svg"
+                  imageSrc={workshopImage}
                   locationName="Springload"
                   locationAddress="Level 6, 7 Dixon St, Wellington"
                   name="Introduction to coding basics"
