@@ -1,6 +1,7 @@
-import * as React from "react"
+import React, { Fragment } from "react"
 import { graphql } from "gatsby"
 import AnchorLink from "react-anchor-link-smooth-scroll"
+import Helmet from "react-helmet"
 import * as styles from "./Index.module.scss"
 
 import growLogo from "../images/grow-logo.png"
@@ -51,11 +52,15 @@ export const pageQuery = graphql`
 export default class IndexPage extends React.Component<IndexPageProps, {}> {
   public render() {
     return (
-      <div>
-        <div className={styles.gutters}>
+      <Fragment>
+        <Helmet>
+          <html lang="en-NZ" />
+          <title>Grow &endash; Empowering women to thrive in tech</title>
+        </Helmet>
+        <header className={styles.gutters}>
           <div className={styles.header}>
             <div className={styles.headerLogo}>
-              <img src={growLogo} alt="Grow" />
+              <img src={growLogo} alt="The Grow team" />
             </div>
             <ul className={styles.headerMenu}>
               <li>
@@ -75,8 +80,8 @@ export default class IndexPage extends React.Component<IndexPageProps, {}> {
               </li>
             </ul>
           </div>
-        </div>
-        <div className={styles.main}>
+        </header>
+        <main className={styles.main}>
           <div className={styles.gutters}>
             <img
               className={styles.bannerImage}
@@ -86,9 +91,9 @@ export default class IndexPage extends React.Component<IndexPageProps, {}> {
             />
             <div id="about">
               <div className={styles.sectionAbout}>
-                <div className={styles.headingXLarge}>
+                <h1 className={styles.headingXLarge}>
                   Empowering women to thrive in tech
-                </div>
+                </h1>
                 <p
                   className={`${styles.paragraphLarge} ${
                     styles.uWidthEightyPercent
@@ -178,7 +183,11 @@ export default class IndexPage extends React.Component<IndexPageProps, {}> {
                     <div className={styles.gridItemContainer}>
                       <div className={styles.gridItem}>
                         <div className={styles.ratioContent}>
-                          <img src={katieImage} className={styles.gridImage} />
+                          <img
+                            src={katieImage}
+                            className={styles.gridImage}
+                            alt=""
+                          />
                         </div>
                       </div>
                       <div className={styles.headingSmall}>Katie Day</div>
@@ -195,7 +204,11 @@ export default class IndexPage extends React.Component<IndexPageProps, {}> {
                     <div className={styles.gridItemContainer}>
                       <div className={styles.gridItem}>
                         <div className={styles.ratioContent}>
-                          <img src={rachelImage} className={styles.gridImage} />
+                          <img
+                            src={rachelImage}
+                            className={styles.gridImage}
+                            alt=""
+                          />
                         </div>
                       </div>
                       <div className={styles.headingSmall}>Rachel Bolt</div>
@@ -213,7 +226,11 @@ export default class IndexPage extends React.Component<IndexPageProps, {}> {
                     <div className={styles.gridItemContainer}>
                       <div className={styles.gridItem}>
                         <div className={styles.ratioContent}>
-                          <img src={ushaImage} className={styles.gridImage} />
+                          <img
+                            src={ushaImage}
+                            className={styles.gridImage}
+                            alt=""
+                          />
                         </div>
                       </div>
                       <div className={styles.headingSmall}>Usha MacDonald</div>
@@ -232,7 +249,11 @@ export default class IndexPage extends React.Component<IndexPageProps, {}> {
                     <div className={styles.gridItemContainer}>
                       <div className={styles.gridItem}>
                         <div className={styles.ratioContent}>
-                          <img src={kellyImage} className={styles.gridImage} />
+                          <img
+                            src={kellyImage}
+                            className={styles.gridImage}
+                            alt=""
+                          />
                         </div>
                       </div>
                       <div className={styles.headingSmall}>Kelly Todd</div>
@@ -251,7 +272,11 @@ export default class IndexPage extends React.Component<IndexPageProps, {}> {
                     <div className={styles.gridItemContainer}>
                       <div className={styles.gridItem}>
                         <div className={styles.ratioContent}>
-                          <img src={giselaImage} className={styles.gridImage} />
+                          <img
+                            src={giselaImage}
+                            className={styles.gridImage}
+                            alt=""
+                          />
                         </div>
                       </div>
                       <div className={styles.headingSmall}>
@@ -273,7 +298,11 @@ export default class IndexPage extends React.Component<IndexPageProps, {}> {
                     <div className={styles.gridItemContainer}>
                       <div className={styles.gridItem}>
                         <div className={styles.ratioContent}>
-                          <img src={lydieImage} className={styles.gridImage} />
+                          <img
+                            src={lydieImage}
+                            className={styles.gridImage}
+                            alt=""
+                          />
                         </div>
                       </div>
                       <div className={styles.headingSmall}>Lydie Danet</div>
@@ -294,7 +323,11 @@ export default class IndexPage extends React.Component<IndexPageProps, {}> {
                     <div className={styles.gridItemContainer}>
                       <div className={styles.gridItem}>
                         <div className={styles.ratioContent}>
-                          <img src={cateImage} className={styles.gridImage} />
+                          <img
+                            src={cateImage}
+                            className={styles.gridImage}
+                            alt=""
+                          />
                         </div>
                       </div>
                       <div className={styles.headingSmall}>Cate Palmer</div>
@@ -313,7 +346,11 @@ export default class IndexPage extends React.Component<IndexPageProps, {}> {
                     <div className={styles.gridItemContainer}>
                       <div className={styles.gridItem}>
                         <div className={styles.ratioContent}>
-                          <img src={julietImage} className={styles.gridImage} />
+                          <img
+                            src={julietImage}
+                            className={styles.gridImage}
+                            alt=""
+                          />
                         </div>
                       </div>
                       <div className={styles.headingSmall}>Juliet Brown</div>
@@ -501,8 +538,8 @@ export default class IndexPage extends React.Component<IndexPageProps, {}> {
               </div>
             </div>
           </div>
-        </div>
-        <div className={styles.footer}>
+        </main>
+        <footer className={styles.footer}>
           <div className={styles.sectionContact}>
             <div className={styles.gutters}>
               <div className={styles.flexWrapper}>
@@ -527,7 +564,7 @@ export default class IndexPage extends React.Component<IndexPageProps, {}> {
                   </div>
                   <div className={styles.paragraphLarge}>
                     <div className={styles.flex}>
-                      <img src={email} />
+                      <img src={email} alt="" />
                       &nbsp;&nbsp;
                       <AnchorLink
                         href="mailto:grow@springload.co.nz"
@@ -537,7 +574,7 @@ export default class IndexPage extends React.Component<IndexPageProps, {}> {
                       </AnchorLink>
                     </div>
                     <div className={styles.flex}>
-                      <img src={phone} />
+                      <img src={phone} alt="" />
                       &nbsp;&nbsp;
                       <AnchorLink
                         href="tel:64-4-801-8205"
@@ -547,7 +584,7 @@ export default class IndexPage extends React.Component<IndexPageProps, {}> {
                       </AnchorLink>
                     </div>
                     <div className={styles.flex}>
-                      <img src={twitter} />
+                      <img src={twitter} alt="" />
                       &nbsp;
                       <AnchorLink
                         href="https://www.twitter.com/growbysl"
@@ -557,7 +594,7 @@ export default class IndexPage extends React.Component<IndexPageProps, {}> {
                       </AnchorLink>
                     </div>
                     <div className={styles.flex}>
-                      <img src={instagram} />
+                      <img src={instagram} alt="" />
                       &nbsp;&nbsp;&nbsp;
                       <AnchorLink
                         href="https://www.instagram.com/growbyspringload"
@@ -590,8 +627,8 @@ export default class IndexPage extends React.Component<IndexPageProps, {}> {
               </AnchorLink>
             </div>
           </div>
-        </div>
-      </div>
+        </footer>
+      </Fragment>
     )
   }
 }
