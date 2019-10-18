@@ -2,6 +2,7 @@ import * as React from "react"
 import { graphql } from "gatsby"
 import AnchorLink from "react-anchor-link-smooth-scroll"
 import * as styles from "./Index.module.scss"
+import Contact from "./components/Contact/Contact"
 
 import growLogo from "../images/grow-logo.png"
 import growBannerImage from "../images/grow-banner-image.jpg"
@@ -479,75 +480,8 @@ export default class IndexPage extends React.Component<IndexPageProps, {}> {
             </div>
           </div>
         </div>
+        <Contact />
         <div className={styles.footer}>
-          <div className={styles.sectionContact}>
-            <div className={styles.gutters}>
-              <div className={styles.flexWrapper}>
-                <div className={styles.flexItem}>
-                  <div className={styles.headingLarge}>Apply</div>
-                  <div className={styles.paragraphLarge}>
-                    Want to learn the basics of web development? Apply to our
-                    next free workshop and see what it’s all about!
-                  </div>
-                  <div className={styles.paragraphLarge}>
-                    <AnchorLink href="#">Apply to our next workshop</AnchorLink>
-                  </div>
-                </div>
-
-                <div className={styles.flexItem} id="contact">
-                  <div className={styles.headingLarge}>Get in touch</div>
-                  <div className={styles.paragraphLarge}>
-                    {" "}
-                    Any questions or suggestions, or want to be up to date on
-                    what’s happening? Contact us via email or phone, or follow
-                    us on social media.
-                  </div>
-                  <div className={styles.paragraphLarge}>
-                    <div className={styles.flex}>
-                      <img src={email} />
-                      &nbsp;&nbsp;
-                      <AnchorLink
-                        href="mailto:grow@springload.co.nz"
-                        className={styles.linkContact}
-                      >
-                        grow@springload.co.nz
-                      </AnchorLink>
-                    </div>
-                    <div className={styles.flex}>
-                      <img src={phone} />
-                      &nbsp;&nbsp;
-                      <AnchorLink
-                        href="tel:64-4-801-8205"
-                        className={styles.linkContact}
-                      >
-                        +64 4 801 8205
-                      </AnchorLink>
-                    </div>
-                    <div className={styles.flex}>
-                      <img src={twitter} />
-                      &nbsp;
-                      <AnchorLink
-                        href="https://www.twitter.com/growbysl"
-                        className={styles.linkContact}
-                      >
-                        twitter.com/growbysl
-                      </AnchorLink>
-                    </div>
-                    <div className={styles.flex}>
-                      <img src={instagram} />
-                      &nbsp;&nbsp;&nbsp;
-                      <AnchorLink
-                        href="https://www.instagram.com/growbyspringload"
-                        className={styles.linkContact}
-                      >
-                        instagram.com/growbyspringload
-                      </AnchorLink>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
           <div className={styles.gutters}>
             <div className={styles.footerLinkContainer}>
               <AnchorLink className={styles.footerLink} href="#about">
