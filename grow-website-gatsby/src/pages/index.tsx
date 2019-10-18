@@ -476,7 +476,7 @@ export default class IndexPage extends React.Component<IndexPageProps, {}> {
             </div>
           </div>
         </main>
-        <div className={styles.footer}>
+        <footer className={styles.footer}>
           <Contact />
           <div className={styles.gutters}>
             <div className={styles.footerLinkContainer}>
@@ -497,7 +497,7 @@ export default class IndexPage extends React.Component<IndexPageProps, {}> {
               </AnchorLink>
             </div>
           </div>
-        </div>
+        </footer>
       </Fragment>
     )
   }
