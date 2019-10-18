@@ -60,7 +60,7 @@ export default class IndexPage extends React.Component<IndexPageProps, {}> {
         <header className={styles.gutters}>
           <div className={styles.header}>
             <div className={styles.headerLogo}>
-              <img src={growLogo} alt="The Grow team" />
+              <img src={growLogo} alt="" />
             </div>
             <ul className={styles.headerMenu}>
               <li>
@@ -87,7 +87,7 @@ export default class IndexPage extends React.Component<IndexPageProps, {}> {
               className={styles.bannerImage}
               src={growBannerImage}
               width="1435px"
-              alt=""
+              alt="The Grow team"
             />
             <div id="about">
               <div className={styles.sectionAbout}>
