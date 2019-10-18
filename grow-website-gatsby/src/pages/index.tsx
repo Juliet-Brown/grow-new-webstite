@@ -3,6 +3,8 @@ import { graphql } from "gatsby"
 import AnchorLink from "react-anchor-link-smooth-scroll"
 import * as styles from "./Index.module.scss"
 
+import Workshop from "./components/workshop"
+
 import growLogo from "../images/grow-logo.png"
 import growBannerImage from "../images/grow-banner-image.jpg"
 import email from "../images/email.svg"
@@ -108,47 +110,23 @@ export default class IndexPage extends React.Component<IndexPageProps, {}> {
               <div className={styles.sectionWorkshop}>
                 <div className={styles.headingLarge}>Workshops</div>
                 <div className={styles.headingXSmall}>Upcoming Event</div>
-                <img
-                  className={styles.imageMedium}
-                  src={
-                    "https://res.cloudinary.com/juliet-brown/image/upload/v1560656531/rectangle_cbnyjr.svg"
-                  }
-                  alt="rectangle"
+                <Workshop
+                  imageSrc="https://res.cloudinary.com/juliet-brown/image/upload/v1560656531/rectangle_cbnyjr.svg"
+                  locationName="Springload"
+                  locationAddress="Level 6, 7 Dixon St, Wellington"
+                  name="Introduction to coding basics"
+                  description={[
+                    "In this workshop, we'll cover the essentials of each of the three \
+                    front-end web languages: HTML, CSS, and JavaScript. You’ll come away \
+                    with a small project you can keep working on in your own time to \
+                    fine-tune your coding skills.",
+                    "All you need is your laptop and yourself — no specialist software or \
+                    programs. There'll be food and drink to keep you fuelled and \
+                    focused. Be ready to learn, have fun, and meet like-minded future \
+                    coding hotshots.",
+                  ]}
+                  dateTime="2019-11-13T18:00:00"
                 />
-
-                <div className={styles.headingMedium}>
-                  Introduction to coding basics
-                </div>
-                <div className={styles.uWidthSixtyPercent}>
-                  <div className={styles.headingSubtitle}>
-                    {" "}
-                    6pm, Wednesday 3rd July 2019 | Springload, Level 6, 7 Dixon
-                    St, Wellington
-                  </div>
-                  <p className={styles.paragraphSmall}>
-                    In this workshop, we’ll cover the essentials of each of the
-                    three front-end web languages: HTML, CSS, and JavaScript.
-                    You’ll come away with a small project you can keep working
-                    on in your own time to fine-tune your coding skills.
-                  </p>
-                  <p
-                    className={`${styles.paragraphSmall} ${
-                      styles.uMarginBottomM
-                    }`}
-                  >
-                    All you need is your laptop and yourself — no specialist
-                    software or programs. There’ll be food and drink to keep you
-                    fuelled and focused. Be ready to learn, have fun, and meet
-                    like-minded future coding hotshots.
-                  </p>
-                  <div className={styles.uMarginBottomS}>
-                    <AnchorLink href="#">Apply for this workshop</AnchorLink>
-                  </div>
-                  <p className={styles.paragraphSmall}>
-                    We’ll let you know if you’ve secured a space in the workshop
-                    by 28 June.
-                  </p>
-                </div>
               </div>
               <div>
                 <div id="people" className={styles.headingLarge}>
