@@ -135,7 +135,6 @@ export default class IndexPage extends React.Component<IndexPageProps, {}> {
                   dateTime="2019-11-13T18:00:00"
                 />
               </div>
-              <div />
             </div>
             <div id="people" className={styles.headingLarge}>
               People
