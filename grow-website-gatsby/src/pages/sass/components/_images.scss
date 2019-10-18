@@ -2,7 +2,8 @@
 // Images
 // ----------------------------------------------------------------------------
 
-.imageMedium {
+.workshopImageContainer {
+  @include aspect-ratio(5, 2);
   margin-bottom: $spacing-base;
   margin-left: -6%;
   width: 112%;
@@ -13,4 +14,8 @@
   @include medium {
     width: 80%;
   }
+}
+
+.workshopImage {
+  width: 100%;
 }
