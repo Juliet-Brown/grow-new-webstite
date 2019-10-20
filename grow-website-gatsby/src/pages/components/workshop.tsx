@@ -87,7 +87,6 @@ export default class Workshop extends React.Component<Props> {
               },
               name: this.props.locationName,
             },
-            image: [this.props.imageSrc],
             name: this.props.name,
             description: this.props.description.join(" "),
             startDate: Moment(this.props.dateTime).format(
