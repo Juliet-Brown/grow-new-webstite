@@ -2,6 +2,8 @@ import * as React from "react"
 import Moment from "moment"
 import * as styles from "../Index.module.scss"
 import AnchorLink from "react-anchor-link-smooth-scroll"
+import { Event } from "schema-dts"
+import { JsonLd } from "react-schemaorg"
 
 type Props = {
   imageSrc: string,
@@ -67,6 +69,32 @@ export default class Workshop extends React.Component<Props> {
             - in early 2020!
           </p>
         </div>
+
+        {/* 
+          This will help the event information be "machine readable".
+          For more info, see this page
+          https://developers.google.com/search/docs/data-types/event
+        */}
+        <JsonLd<Event>
+          item={{
+            "@context": "http://schema.org",
+            "@type": "Event",
+            location: {
+              "@type": "Place",
+              address: {
+                "@type": "PostalAddress",
+                streetAddress: this.props.locationAddress,
+              },
+              name: this.props.locationName,
+            },
+            name: this.props.name,
+            description: this.props.description.join(" "),
+            startDate: Moment(this.props.dateTime).format(
+              "YYYY-MM-DDTHH:mm:SS"
+            ),
+            endDate: Moment(this.props.dateTime).format("YYYY-MM-DD"),
+          }}
+        />
       </div>
     )
   }
