@@ -5,6 +5,7 @@ import Helmet from "react-helmet"
 import * as styles from "./Index.module.scss"
 import About from "./components/About/About"
 import Contact from "./components/Contact/Contact"
+import FAQs from "./components/FAQs/FAQs"
 import Footer from "./components/Footer/Footer"
 import Header from "./components/Header/Header"
 import People from "./components/People/People"
@@ -89,135 +90,7 @@ export default class IndexPage extends React.Component<IndexPageProps, {}> {
               </div>
             </div>
             <People />
-            <div id="faqs">
-              <div className={styles.headingLarge}>
-                Frequently asked questions
-              </div>
-              <div
-                className={`${styles.headingXSmall} ${styles.uMarginBottomM}`}
-              >
-                Applicants
-              </div>
-              <div className={styles.grid}>
-                <div className={styles.gridItemContainer}>
-                  <div className={styles.headingSmall}>
-                    How many applicants do you accept, and how many people
-                    apply?
-                  </div>
-                  <div className={styles.paragraphSmall}>
-                    <p>
-                      We try to pair two applicants to every coach who’s
-                      available. Around twenty applicants fit comfortably in the
-                      space Springload has generously let us use. For our first
-                      workshop, we received over a hundred applicants.
-                    </p>
-                  </div>
-                </div>
-                <div className={styles.gridItemContainer}>
-                  <div className={styles.headingSmall}>
-                    If I’m not accepted for one workshop, can I reapply?
-                  </div>
-                  <div className={styles.paragraphSmall}>
-                    <p>
-                      Before we open applications to everyone, we give priority
-                      to the applicants who missed out on the last workshop.
-                      Even if you miss out the first time, you’ll probably get a
-                      chance to attend a later workshop.
-                    </p>
-                  </div>
-                </div>
-                <div className={styles.gridItemContainer}>
-                  <div className={styles.headingSmall}>
-                    Why a workshop specifically for women and non-binary people?
-                  </div>
-                  <div className={styles.paragraphSmall}>
-                    <p>
-                      There’s still a huge gender gap in STEM, and we believe
-                      creating spaces for learning to code for those who are
-                      underrepresented will help us close that gap. We are all
-                      for doing what we can to create a more diverse tech
-                      sector!
-                    </p>
-                  </div>
-                </div>
-                <div className={styles.gridItemContainer}>
-                  <div className={styles.headingSmall}>
-                    How much coding experience do I need?
-                  </div>
-                  <div className={styles.paragraphSmall}>
-                    <p>
-                      None! We cater to absolute beginners. The aim behind our
-                      workshops is to give those who are totally new to coding a
-                      taster of what it’s all about.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div
-                className={`${styles.headingXSmall} ${styles.uMarginBottomM}`}
-              >
-                What You Need
-              </div>
-              <div className={styles.grid}>
-                <div className={styles.gridItemContainer}>
-                  <div className={styles.headingSmall}>
-                    What if I don’t have a laptop?
-                  </div>
-                  <div className={styles.paragraphSmall}>
-                    <p>
-                      Flick us an email at <a>grow@springload.co.nz</a>, and
-                      we’ll see what we can do about sourcing a spare laptop for
-                      you to borrow. We want to make Grow accessible to
-                      everyone, so not having a laptop shouldn’t be a barrier.
-                    </p>
-                  </div>
-                </div>
-                <div className={styles.gridItemContainer}>
-                  <div className={styles.headingSmall}>Will you feed us?</div>
-                  <div className={styles.paragraphSmall}>
-                    <p>
-                      Yes! We know you’ll probably get hungry, so we’ll be
-                      providing tasty snacks to help keep you functioning at
-                      full capacity. Our application form has a section asking
-                      you about your dietary requirements.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div
-                className={`${styles.headingXSmall} ${styles.uMarginBottomM}`}
-              >
-                After the Workshop
-              </div>
-              <div className={styles.grid}>
-                <div className={styles.gridItemContainer}>
-                  <div className={styles.headingSmall}>
-                    What will I achieve by the end of the workshop?
-                  </div>
-                  <div className={styles.paragraphSmall}>
-                    <p>
-                      You’ll have a basic grasp of what HTML, CSS, and
-                      JavaScript are and what they do in web development. You’ll
-                      have used them in a fun, challenging exercise and seen how
-                      they can be used to build cool stuff on the interwebs!
-                    </p>
-                  </div>
-                </div>
-                <div className={styles.gridItemContainer}>
-                  <div className={styles.headingSmall}>
-                    What happens after the workshop?
-                  </div>
-                  <div className={styles.paragraphSmall}>
-                    <p>
-                      You’ll be able to join the Grow Facebook group and keep up
-                      with those who have Grown with you. And maybe you’ll
-                      decide to keep learning to code by making use of some of
-                      the online resources we recommend!
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <FAQs />
           </div>
         </main>
         <Contact />
