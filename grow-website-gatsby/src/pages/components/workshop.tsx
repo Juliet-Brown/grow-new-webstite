@@ -6,11 +6,11 @@ import { Event } from "schema-dts"
 import { JsonLd } from "react-schemaorg"
 
 type Props = {
-  imageSrc: string,
-  name: string,
-  dateTime: string,
-  locationName: string,
-  locationAddress: string,
+  imageSrc: string
+  name: string
+  dateTime: string
+  locationName: string
+  locationAddress: string
   description: string[]
 }
 
