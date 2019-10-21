@@ -4,6 +4,7 @@ import julietImage from "../../../images/juliet.png"
 import katieImage from "../../../images/katie.png"
 import kellyImage from "../../../images/kelly.png"
 import lydieImage from "../../../images/lydie.png"
+import oisínImage from "../../../images/oisín.png"
 import rachelImage from "../../../images/rachel.png"
 import ushaImage from "../../../images/usha.png"
 
@@ -26,11 +27,16 @@ const peopleData = [
     description:
       "Usha got her start in coding early. As a young teen, she started playing around with code and it wasn’t long before she discovered the open source community. It impressed her with its wealth of learning resources and culture of building things to help people. After a few years as an apprentice at her dad’s IT business followed by Enspiral Dev Academy’s web development bootcamp, she contracted for a few months before joining Springload as a front-end developer.",
   },
+  // {
+  //   name: "Kelly Todd",
+  //   imageSrc: kellyImage,
+  //   description:
+  //     "Kelly studied photography in her native UK, and ran her own portrait photography business before making the leap into the tech industry. She’s Springload’s studio and events manager, and she loves looking after (and being part of) a team of smart, friendly, vibrant people — which is a real change from working on her own as a photographer! She finds the tech industry exciting and ever-changing, and loves that it has the capacity to incite positive change in the world.",
+  // },
   {
-    name: "Kelly Todd",
-    imageSrc: kellyImage,
-    description:
-      "Kelly studied photography in her native UK, and ran her own portrait photography business before making the leap into the tech industry. She’s Springload’s studio and events manager, and she loves looking after (and being part of) a team of smart, friendly, vibrant people — which is a real change from working on her own as a photographer! She finds the tech industry exciting and ever-changing, and loves that it has the capacity to incite positive change in the world.",
+    name: "Oisín Hassett",
+    imageSrc: oisínImage,
+    description: "Oisín, who hails from Ireland, is Springload’s studio and events manager. He started out in the hospitality industry when he was fifteen, and after finishing school worked his way up to management at the Guinness Storehouse in Dublin. That may be a far cry from working at a tech company, but here at Springload he gets to do what he loves most — helping people. From organising food for workshops to getting T-shirts printed for the team, he’s been indispensable in helping run Grow."
   },
   {
     name: "Gisela de la Villa",
