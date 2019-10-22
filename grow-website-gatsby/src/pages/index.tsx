@@ -3,11 +3,12 @@ import { graphql } from "gatsby"
 import AnchorLink from "react-anchor-link-smooth-scroll"
 import Helmet from "react-helmet"
 import * as styles from "./Index.module.scss"
+import About from "./components/About/About"
 import Contact from "./components/Contact/Contact"
 import Footer from "./components/Footer/Footer"
+import Header from "./components/Header/Header"
 import Workshop from "./components/workshop"
 
-import growLogo from "../images/grow-logo.png"
 import growBannerImage from "../images/grow-banner-image.jpg"
 import workshopImage from "../images/workshop-image.png"
 import email from "../images/email.svg"
@@ -61,30 +62,7 @@ export default class IndexPage extends React.Component<IndexPageProps, {}> {
           <html lang="en-NZ" />
           <title>Grow &endash; Empowering women to thrive in tech</title>
         </Helmet>
-        <header className={styles.gutters}>
-          <div className={styles.header}>
-            <div className={styles.headerLogo}>
-              <img src={growLogo} alt="" />
-            </div>
-            <ul className={styles.headerMenu}>
-              <li>
-                <AnchorLink href="#about">About</AnchorLink>
-              </li>
-              <li>
-                <AnchorLink href="#workshop">Workshops</AnchorLink>
-              </li>
-              <li>
-                <AnchorLink href="#people">People</AnchorLink>
-              </li>
-              <li>
-                <AnchorLink href="#faqs">FAQS</AnchorLink>
-              </li>
-              <li>
-                <AnchorLink href="#contact">Contact</AnchorLink>
-              </li>
-            </ul>
-          </div>
-        </header>
+        <Header />
         <main className={styles.main}>
           <div className={styles.gutters}>
             <img
@@ -93,26 +71,7 @@ export default class IndexPage extends React.Component<IndexPageProps, {}> {
               width="1435px"
               alt="The Grow team"
             />
-            <div id="about">
-              <div className={styles.sectionAbout}>
-                <h1 className={styles.headingXLarge}>
-                  Empowering women to thrive in tech
-                </h1>
-                <p
-                  className={`${styles.paragraphLarge} ${
-                    styles.uWidthEightyPercent
-                  }`}
-                >
-                  Grow is a series of self-contained workshops for women who
-                  want to learn the basics of web development. Each workshop
-                  provides a fun, practical intro to HTML, CSS, and JavaScript.
-                  Run by an all-women, all-volunteer cast of Springloaders, Grow
-                  workshops are free, inclusive, safe, and welcoming for even
-                  the most novice of newbies.
-                </p>
-              </div>
-            </div>
-
+            <About />
             <div id="workshop">
               <div className={styles.sectionWorkshop}>
                 <div className={styles.headingLarge}>Workshops</div>
