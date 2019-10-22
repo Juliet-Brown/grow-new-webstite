@@ -5,7 +5,7 @@ import { Event } from "schema-dts"
 import { JsonLd } from "react-schemaorg"
 
 import * as styles from "../../Index.module.scss"
-import workshopData from "./workshopData"
+import WorkshopData from "./WorkshopData"
 
 const Workshop = () => {
   return (
@@ -17,18 +17,18 @@ const Workshop = () => {
           <div className={styles.ratioContent}>
             <img
               className={styles.workshopImage}
-              src={workshopData.image}
-              alt={workshopData.imageAltText}
+              src={WorkshopData.image}
+              alt={WorkshopData.imageAltText}
             />
           </div>
         </div>
-        <div className={styles.headingMedium}>{workshopData.name}</div>
+        <div className={styles.headingMedium}>{WorkshopData.name}</div>
         <div className={styles.uWidthSixtyPercent}>
           <div className={styles.headingSubtitle}>
-            {Moment(workshopData.dateTime).format("ha, dddd do MMMM YYYY")} |
-            {workshopData.locationName}, {workshopData.locationAddress}
+            {Moment(WorkshopData.dateTime).format("ha, dddd do MMMM YYYY")} |
+            {WorkshopData.locationName}, {WorkshopData.locationAddress}
           </div>
-          {workshopData.description.map((paragraph, i) => {
+          {WorkshopData.description.map((paragraph, i) => {
             return (
               <p className={styles.paragraphSmall} key={i}>
                 {paragraph}
@@ -37,12 +37,12 @@ const Workshop = () => {
           })}
           <div className={styles.uMarginBottomS}>
             <AnchorLink
-              className={workshopData.isWorkshopOpen ? "" : styles.linkDisabled}
+              className={WorkshopData.isWorkshopOpen ? "" : styles.linkDisabled}
             >
               Apply for this workshop
             </AnchorLink>
           </div>
-          {workshopData.isWorkshopOpen ? (
+          {WorkshopData.isWorkshopOpen ? (
             ""
           ) : (
             <Fragment>
@@ -54,19 +54,19 @@ const Workshop = () => {
               <p className={styles.paragraphSmall}>
                 We’ll announce the next one on{" "}
                 <AnchorLink
-                  href={workshopData.instagramHref}
+                  href={WorkshopData.instagramHref}
                   className={styles.linkContact}
                 >
                   Instagram
                 </AnchorLink>{" "}
                 and{" "}
                 <AnchorLink
-                  href={workshopData.twitterHref}
+                  href={WorkshopData.twitterHref}
                   className={styles.linkContact}
                 >
                   Twitter
                 </AnchorLink>{" "}
-                {workshopData.nextWorkshopAnnounced}
+                {WorkshopData.nextWorkshopAnnounced}
               </p>
             </Fragment>
           )}
@@ -83,16 +83,16 @@ const Workshop = () => {
                 "@type": "Place",
                 address: {
                   "@type": "PostalAddress",
-                  streetAddress: workshopData.locationAddress,
+                  streetAddress: WorkshopData.locationAddress,
                 },
-                name: workshopData.locationName,
+                name: WorkshopData.locationName,
               },
-              name: workshopData.name,
-              description: workshopData.description.join(" "),
-              startDate: Moment(workshopData.dateTime).format(
+              name: WorkshopData.name,
+              description: WorkshopData.description.join(" "),
+              startDate: Moment(WorkshopData.dateTime).format(
                 "YYYY-MM-DDTHH:mm:SS"
               ),
-              endDate: Moment(workshopData.dateTime).format("YYYY-MM-DD"),
+              endDate: Moment(WorkshopData.dateTime).format("YYYY-MM-DD"),
             }}
           />
         </div>

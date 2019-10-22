@@ -1,6 +1,6 @@
 import workshopImage from "../../../images/workshop-image.png"
 
-const workshopData = {
+const WorkshopData = {
   name: "Introduction to coding basics",
   image: workshopImage,
   imageAltText: "Participants write code at a Grow workshop",
@@ -17,4 +17,4 @@ const workshopData = {
   nextWorkshopAnnounced: "in early 2020!",
 }
 
-export default workshopData
+export default WorkshopData
