@@ -29,9 +29,9 @@ const People = () => {
 
       <div className={styles.uMarginBottomL}>
         <div className={styles.grid}>
-          {peopleData.map(person => {
+          {peopleData.map((person, i) => {
             return (
-              <div className={styles.gridItemContainer}>
+              <div className={styles.gridItemContainer} key={i}>
                 <div className={styles.gridItem}>
                   <div className={styles.ratioContent}>
                     <img
