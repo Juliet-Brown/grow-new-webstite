@@ -1,4 +1,4 @@
-import React, { Fragment } from "react"
+import React from "react"
 import { graphql } from "gatsby"
 import Helmet from "react-helmet"
 
@@ -45,7 +45,7 @@ export const pageQuery = graphql`
 export default class IndexPage extends React.Component<IndexPageProps, {}> {
   public render() {
     return (
-      <Fragment>
+      <>
         <Helmet>
           <html lang="en-NZ" />
           <title>Grow &endash; Empowering women to thrive in tech</title>
@@ -67,7 +67,7 @@ export default class IndexPage extends React.Component<IndexPageProps, {}> {
         </main>
         <Contact />
         <Footer />
-      </Fragment>
+      </>
     )
   }
 }

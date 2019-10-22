@@ -1,11 +1,11 @@
-import React, { Fragment } from "react"
+import React from "react"
 import * as styles from "../../Index.module.scss"
 
 import PeopleData from "./PeopleData"
 
 const People = () => {
   return (
-    <Fragment>
+    <>
       <div id="people" className={styles.headingLarge}>
         People
       </div>
@@ -41,7 +41,7 @@ const People = () => {
           })}
         </div>
       </div>
-    </Fragment>
+    </>
   )
 }
 

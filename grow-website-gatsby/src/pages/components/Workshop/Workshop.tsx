@@ -1,4 +1,4 @@
-import React, { Fragment } from "react"
+import React from "react"
 import Moment from "moment"
 import AnchorLink from "react-anchor-link-smooth-scroll"
 import { Event } from "schema-dts"
@@ -45,9 +45,11 @@ const Workshop = () => {
           {WorkshopData.isWorkshopOpen ? (
             ""
           ) : (
-            <Fragment>
+            <>
               <p
-                className={`${styles.paragraphEmphasis} ${styles.uMarginBottomS}`}
+                className={`${styles.paragraphEmphasis} ${
+                  styles.uMarginBottomS
+                }`}
               >
                 Sorry — this workshop is now fully booked!
               </p>
@@ -68,7 +70,7 @@ const Workshop = () => {
                 </AnchorLink>{" "}
                 {WorkshopData.nextWorkshopAnnounced}
               </p>
-            </Fragment>
+            </>
           )}
           {/* 
           This will help the event information be "machine readable".
