@@ -1,4 +1,4 @@
-const footerData = [
+const FooterData = [
   {
     name: "About",
     href: "#about",
@@ -21,4 +21,4 @@ const footerData = [
   },
 ]
 
-export default footerData
+export default FooterData

@@ -1,4 +1,4 @@
-const headerData = [
+const HeaderData = [
   {
     name: "About",
     href: "#about",
@@ -21,4 +21,4 @@ const headerData = [
   },
 ]
 
-export default headerData
+export default HeaderData
