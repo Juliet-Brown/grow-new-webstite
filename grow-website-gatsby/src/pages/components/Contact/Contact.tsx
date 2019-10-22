@@ -2,7 +2,7 @@ import * as React from "react"
 import * as styles from "../../Index.module.scss"
 import AnchorLink from "react-anchor-link-smooth-scroll"
 
-import contactData from "./contactData"
+import ContactData from "./ContactData"
 
 const Contact = () => {
   return (
@@ -29,7 +29,7 @@ const Contact = () => {
               media.
             </div>
             <div className={styles.paragraphLarge}>
-              {contactData.map(item => {
+              {ContactData.map(item => {
                 return (
                   <div className={styles.flex}>
                     <AnchorLink href={item.href} className={styles.linkContact}>

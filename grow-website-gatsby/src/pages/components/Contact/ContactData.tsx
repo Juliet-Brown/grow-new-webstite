@@ -1,4 +1,4 @@
-const contactData = [
+const ContactData = [
   {
     href: "mailto:grow@springload.co.nz",
     text: "grow@springload.co.nz",
@@ -17,4 +17,4 @@ const contactData = [
   },
 ]
 
-export default contactData
+export default ContactData
