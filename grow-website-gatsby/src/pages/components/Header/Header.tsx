@@ -3,7 +3,7 @@ import * as styles from "../../Index.module.scss"
 import AnchorLink from "react-anchor-link-smooth-scroll"
 
 import growLogo from "../../../images/grow-logo.png"
-import headerData from "./headerData"
+import headerData from "./HeaderData"
 
 const Header = () => {
   return (
