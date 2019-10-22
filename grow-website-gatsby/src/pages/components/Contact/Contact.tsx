@@ -2,6 +2,8 @@ import * as React from "react"
 import * as styles from "../../Index.module.scss"
 import AnchorLink from "react-anchor-link-smooth-scroll"
 
+import ContactData from "./ContactData"
+
 const Contact = () => {
   return (
     <div className={styles.sectionContact}>
@@ -27,22 +29,15 @@ const Contact = () => {
               media.
             </div>
             <div className={styles.paragraphLarge}>
-              <div className={styles.flex}>
-                <AnchorLink
-                  href="mailto:grow@springload.co.nz"
-                  className={styles.linkContact}
-                >
-                  grow@springload.co.nz
-                </AnchorLink>
-              </div>
-              <div className={styles.flex}>
-                <AnchorLink
-                  href="tel:64-4-801-8205"
-                  className={styles.linkContact}
-                >
-                  +64 4 801 8205
-                </AnchorLink>
-              </div>
+              {ContactData.map(item => {
+                return (
+                  <div className={styles.flex}>
+                    <AnchorLink href={item.href} className={styles.linkContact}>
+                      {item.text}
+                    </AnchorLink>
+                  </div>
+                )
+              })}
             </div>
           </div>
         </div>
