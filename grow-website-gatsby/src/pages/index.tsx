@@ -4,6 +4,7 @@ import AnchorLink from "react-anchor-link-smooth-scroll"
 import Helmet from "react-helmet"
 import * as styles from "./Index.module.scss"
 import Contact from "./components/Contact/Contact"
+import Footer from "./components/Footer/Footer"
 import Workshop from "./components/workshop"
 
 import growLogo from "../images/grow-logo.png"
@@ -474,28 +475,8 @@ export default class IndexPage extends React.Component<IndexPageProps, {}> {
             </div>
           </div>
         </main>
-        <footer className={styles.footer}>
-          <Contact />
-          <div className={styles.gutters}>
-            <div className={styles.footerLinkContainer}>
-              <AnchorLink className={styles.footerLink} href="#about">
-                About
-              </AnchorLink>
-              <AnchorLink className={styles.footerLink} href="#workshop">
-                Workshops
-              </AnchorLink>
-              <AnchorLink className={styles.footerLink} href="#people">
-                People
-              </AnchorLink>
-              <AnchorLink className={styles.footerLink} href="#faqs">
-                FAQS
-              </AnchorLink>
-              <AnchorLink className={styles.footerLink} href="#contact">
-                Contact
-              </AnchorLink>
-            </div>
-          </div>
-        </footer>
+        <Contact />
+        <Footer />
       </Fragment>
     )
   }
