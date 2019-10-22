@@ -25,7 +25,7 @@ const Workshop = () => {
         <div className={styles.headingMedium}>{WorkshopData.name}</div>
         <div className={styles.uWidthSixtyPercent}>
           <div className={styles.headingSubtitle}>
-            {Moment(WorkshopData.dateTime).format("ha, dddd do MMMM YYYY")} |
+            {Moment(WorkshopData.dateTime).format("ha, dddd do MMMM YYYY")} |{" "}
             {WorkshopData.locationName}, {WorkshopData.locationAddress}
           </div>
           {WorkshopData.description.map((paragraph, i) => {
@@ -42,9 +42,7 @@ const Workshop = () => {
               Apply for this workshop
             </AnchorLink>
           </div>
-          {WorkshopData.isWorkshopOpen ? (
-            ""
-          ) : (
+          {!WorkshopData.isWorkshopOpen && (
             <>
               <p
                 className={`${styles.paragraphEmphasis} ${
