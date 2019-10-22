@@ -1,7 +1,7 @@
 import React, { Fragment } from "react"
 import * as styles from "../../Index.module.scss"
 
-import peopleData from "./peopleData"
+import PeopleData from "./PeopleData"
 
 const People = () => {
   return (
@@ -11,25 +11,18 @@ const People = () => {
       </div>
       <div className={styles.uMarginBottomML}>
         <div className={styles.uWidthSixtyPercent}>
-          <p className={styles.paragraphSmall}>
-            We’re the dedicated, approachable and welcoming team behind Grow. We
-            all work at Springload and have been generously given time and
-            support during our work hours to make Grow what it is.
-          </p>
-          <p className={styles.paragraphSmall}>
-            Not all of us code (but most of us do). And not all of us knew that
-            tech was where we wanted to end up. Some of us came from eclectic,
-            non-coding backgrounds: graphic design, fine art, creative writing,
-            clock repairing, cabinet making, and photography. But what we all
-            want is to help make learning the basics of web development as fun
-            and accessible as we can for you.
-          </p>
+          {PeopleData.description.map((paragraph, i) => {
+            return (
+              <p className={styles.paragraphSmall} key={i}>
+                {paragraph}
+              </p>
+            )
+          })}
         </div>
       </div>
-
       <div className={styles.uMarginBottomL}>
         <div className={styles.grid}>
-          {peopleData.map((person, i) => {
+          {PeopleData.people.map((person, i) => {
             return (
               <div className={styles.gridItemContainer} key={i}>
                 <div className={styles.gridItem}>
@@ -46,7 +39,6 @@ const People = () => {
               </div>
             )
           })}
-          }
         </div>
       </div>
     </Fragment>
