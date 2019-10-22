@@ -4,9 +4,9 @@ import AnchorLink from "react-anchor-link-smooth-scroll"
 import Helmet from "react-helmet"
 import * as styles from "./Index.module.scss"
 import Contact from "./components/Contact/Contact"
+import Header from "./components/Header/Header"
 import Workshop from "./components/workshop"
 
-import growLogo from "../images/grow-logo.png"
 import growBannerImage from "../images/grow-banner-image.jpg"
 import workshopImage from "../images/workshop-image.png"
 import email from "../images/email.svg"
@@ -60,30 +60,7 @@ export default class IndexPage extends React.Component<IndexPageProps, {}> {
           <html lang="en-NZ" />
           <title>Grow &endash; Empowering women to thrive in tech</title>
         </Helmet>
-        <header className={styles.gutters}>
-          <div className={styles.header}>
-            <div className={styles.headerLogo}>
-              <img src={growLogo} alt="" />
-            </div>
-            <ul className={styles.headerMenu}>
-              <li>
-                <AnchorLink href="#about">About</AnchorLink>
-              </li>
-              <li>
-                <AnchorLink href="#workshop">Workshops</AnchorLink>
-              </li>
-              <li>
-                <AnchorLink href="#people">People</AnchorLink>
-              </li>
-              <li>
-                <AnchorLink href="#faqs">FAQS</AnchorLink>
-              </li>
-              <li>
-                <AnchorLink href="#contact">Contact</AnchorLink>
-              </li>
-            </ul>
-          </div>
-        </header>
+        <Header />
         <main className={styles.main}>
           <div className={styles.gutters}>
             <img
