@@ -1,14 +1,14 @@
 import * as React from "react"
 import * as styles from "../../Index.module.scss"
 import AnchorLink from "react-anchor-link-smooth-scroll"
-import footerData from "./footerData"
+import FooterData from "./FooterData"
 
 const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.gutters}>
         <div className={styles.footerLinkContainer}>
-          {footerData.map((section, i) => {
+          {FooterData.map((section, i) => {
             return (
               <AnchorLink
                 className={styles.footerLink}
