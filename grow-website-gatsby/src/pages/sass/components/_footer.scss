@@ -56,17 +56,16 @@
   color: $color-white;
   text-decoration: none;
   margin-bottom: $spacing-base;
+  align-self: flex-start;
   @include small {
     margin-bottom: 0;
     margin-right: $spacing-large;
-  }
-  &:hover {
-    border-bottom: 0;
   }
 }
 
 .footerIcon {
   margin-bottom: $spacing-small;
+  border-bottom: 0;
   @include small {
     &:nth-last-child(2) {
       margin-right: $spacing-base;
