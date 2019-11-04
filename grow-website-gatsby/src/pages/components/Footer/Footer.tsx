@@ -22,21 +22,7 @@ const Footer = () => {
               )
             })}
           </div>
-          <div className={`${styles.footerLinkContainer} ${styles.footerIconContainer}`}>
-            <div className={`${styles.flex} ${styles.footerSocialLinkContainer}`}>
-              {FooterData.socialIcons.map((icon, i) => {
-                return (
-                  <a
-                    className={styles.footerIcon}
-                    target="_blank"
-                    href={icon.href}
-                    key={i}
-                  >
-                    <img src={icon.imageSrc} />
-                  </a>
-                )
-              })}
-            </div>
+          <div className={styles.footerIconContainer}>
             <div className={styles.footerIcon}>
               <img src={springloadIcon} />
             </div>

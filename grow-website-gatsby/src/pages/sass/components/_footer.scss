@@ -37,6 +37,8 @@
 }
 
 .footerIconContainer {
+  margin-top: $spacing-xlarge;
+  margin-bottom: $spacing-xlarge;
   display: flex;
   justify-content: space-between;
 }
