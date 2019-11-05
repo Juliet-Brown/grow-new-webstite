@@ -22,12 +22,10 @@ const Footer = () => {
               )
             })}
           </div>
-          <div className={styles.footerIconContainer}>
             <div className={styles.footerIcon}>
               <img src={springloadIcon} />
             </div>
           </div>
-        </div>
       </div>
     </footer>
   )
