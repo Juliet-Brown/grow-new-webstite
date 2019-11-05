@@ -11,6 +11,6 @@
   cursor: not-allowed;
 
   &:hover {
-    border-bottom: none;
+    text-decoration: line-through $color-coral;
   }
 }

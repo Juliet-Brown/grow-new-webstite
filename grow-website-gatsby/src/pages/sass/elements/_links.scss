@@ -4,10 +4,9 @@
 
 a {
   color: $color-grey-dark;
-  border-bottom: solid 2px $color-transparent;
+  text-decoration: underline solid $color-transparent;
   &:hover {
-    border-bottom: solid 2px $color-coral;
+    text-decoration: underline solid $color-coral;
   }
   font-weight: bold;
-  text-decoration: none;
 }
