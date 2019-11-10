@@ -23,17 +23,15 @@ const FooterData = {
       name: "Contact",
       href: "#contact",
     },
-  ],
-  socialIcons: [
     {
-      imageSrc: twitterIcon,
-      href: "https://www.twitter.com/growbysl",
+      name: "Twitter",
+      href: "https://www.twitter.com/growbysl"
     },
     {
-      imageSrc: instagramIcon,
-      href: "https://www.instagram.com/growbyspringload",
-    },
-  ],
+      name: "Instagram",
+      href: "https://www.instagram.com/growbyspringload"
+    }
+  ]
 }
 
 export default FooterData
