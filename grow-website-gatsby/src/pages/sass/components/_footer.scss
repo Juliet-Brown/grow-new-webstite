@@ -65,13 +65,13 @@
 
 .footerIcon {
   margin-bottom: $spacing-small;
-  border-bottom: 0;
+  text-decoration: none;
   @include small {
     &:nth-last-child(2) {
       margin-right: $spacing-base;
     }
   }
   &:hover {
-    border-bottom: 0;
+    text-decoration: none;
   }
 }
