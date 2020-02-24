@@ -11,7 +11,7 @@ const Workshop = () => {
   return (
     <div id="workshop">
       <div className={styles.sectionWorkshop}>
-        <div className={styles.headingLarge}>Workshops</div>
+        <h2>Workshops</h2>
         <div className={styles.headingXSmall}>Upcoming Event</div>
         <div className={styles.workshopImageContainer}>
           <div className={styles.ratioContent}>
@@ -22,7 +22,7 @@ const Workshop = () => {
             />
           </div>
         </div>
-        <div className={styles.headingMedium}>{WorkshopData.name}</div>
+        <h3>{WorkshopData.name}</h3>
         <div className={styles.uWidthSixtyPercent}>
           <div className={styles.headingSubtitle}>
             {Moment(WorkshopData.dateTime).format("ha, dddd do MMMM YYYY")} |{" "}

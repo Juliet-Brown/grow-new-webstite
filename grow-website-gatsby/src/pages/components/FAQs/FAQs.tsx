@@ -5,7 +5,7 @@ import FAQData from "./FAQData"
 const FAQs = () => {
   return (
     <div id="faqs" className={styles.sectionFaqs}>
-      <div className={styles.headingLarge}>Frequently asked questions</div>
+      <h2>Frequently asked questions</h2>
       {FAQData.map(item => {
         return (
           <>
@@ -18,7 +18,7 @@ const FAQs = () => {
                   <div className={styles.gridItemContainer} key={i}>
                     <div className={styles.headingSmall}>{item.question}</div>
                     <div className={styles.paragraphSmall}>
-                      <p dangerouslySetInnerHTML={item.answer}></p>
+                      <p dangerouslySetInnerHTML={item.answer} />
                     </div>
                   </div>
                 )

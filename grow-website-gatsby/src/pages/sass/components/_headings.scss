@@ -3,7 +3,6 @@
 // ----------------------------------------------------------------------------
 
 .headingXSmall {
-  font-size: $spacing-small-med;
   font-weight: bold;
   letter-spacing: 0.5px;
   text-transform: uppercase;
@@ -46,21 +45,7 @@
   }
 }
 
-.headingXLarge {
-  font-family: $font-family-serif;
-  font-size: $spacing-xlarge;
-  margin-bottom: $spacing-medium;
-  @include medium {
-    font-size: $spacing-xxlarge;
-    width: 60%;
-  }
-  @include large {
-    font-size: $spacing-xxxlarge;
-    margin-bottom: $spacing-large;
-  }
-}
-
 .headingSubtitle {
   font-size: $spacing-small;
-  margin-bottom: $spacing-xlarge;
+  margin-bottom: $spacing-med-large;
 }

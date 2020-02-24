@@ -3,35 +3,35 @@
 // ----------------------------------------------------------------------------
 
 // Settings
-@import './sass/settings/colors';
-@import './sass/settings/fonts';
-@import './sass/settings/spacing';
+@import "./sass/settings/sizes";
+@import "./sass/settings/colors";
+@import "./sass/settings/fonts";
+@import "./sass/settings/spacing";
 
 // Tools
-@import './sass/tools/breakpoints';
-@import './sass/tools/mixins';
+@import "./sass/settings/breakpoints";
+@import "./sass/settings/mixins";
 
 // Elements
-@import './sass/elements/links';
-@import './sass/elements/lists';
-@import './sass/elements/page';
-@import './sass/elements/paragraphs';
+@import "./sass/elements/links";
+@import "./sass/elements/page";
+@import "./sass/elements/paragraphs";
 
 // Generic
-@import './sass/generic/reset';
+@import "./sass/generic/reset";
 
 // Components
-@import './sass/components/banner';
-@import './sass/components/flex';
-@import './sass/components/footer';
-@import './sass/components/grid';
-@import './sass/components/gutters';
-@import './sass/components/header';
-@import './sass/components/headings';
-@import './sass/components/images';
-@import './sass/components/links';
-@import './sass/components/paragraphs';
-@import './sass/components/sections';
+@import "./sass/components/banner";
+@import "./sass/components/flex";
+@import "./sass/components/footer";
+@import "./sass/components/grid";
+@import "./sass/components/gutters";
+@import "./sass/components/header";
+@import "./sass/components/headings";
+@import "./sass/components/images";
+@import "./sass/components/links";
+@import "./sass/components/paragraphs";
+@import "./sass/components/sections";
 
 // Utilities
-@import './sass/utilities/utilities';
+@import "./sass/utilities/utilities";

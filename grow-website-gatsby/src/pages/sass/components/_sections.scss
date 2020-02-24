@@ -2,10 +2,24 @@
 // Sections
 // ----------------------------------------------------------------------------
 
-.sectionAbout {
-  margin-bottom: $spacing-xlarge;
+.aboutSection {
+  margin-bottom: 90px;
+
   @include medium {
     margin-bottom: $spacing-xxxlarge;
+  }
+}
+
+.sectionAboutHeader {
+  margin-bottom: $spacing-xlarge;
+  width: 60%;
+
+  @include medium {
+    margin-bottom: $spacing-xxxlarge;
+  }
+
+  @include xsmall {
+    width: 100%;
   }
 }
 

@@ -6,9 +6,7 @@ import PeopleData from "./PeopleData"
 const People = () => {
   return (
     <>
-      <div id="people" className={styles.headingLarge}>
-        People
-      </div>
+      <h2 id="people">People</h2>
       <div className={styles.uMarginBottomML}>
         <div className={styles.uWidthSixtyPercent}>
           {PeopleData.description.map((paragraph, i) => {
@@ -20,11 +18,12 @@ const People = () => {
           })}
         </div>
       </div>
+
       <div className={styles.uMarginBottomL}>
         <div className={styles.grid}>
           {PeopleData.people.map((person, i) => {
             return (
-              <div className={styles.gridItemContainer} key={i}>
+              <div className={styles.imageContainer} key={i}>
                 <div className={styles.gridItem}>
                   <div className={styles.ratioContent}>
                     <img
@@ -35,7 +34,6 @@ const People = () => {
                   </div>
                 </div>
                 <div className={styles.headingSmall}>{person.name}</div>
-                <p className={styles.paragraphSmall}>{person.description}</p>
               </div>
             )
           })}

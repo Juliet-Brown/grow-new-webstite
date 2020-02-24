@@ -31,13 +31,3 @@
   }
   margin-bottom: $spacing-xsmall;
 }
-
-.headerMenu {
-  font-weight: bold;
-  font-size: $spacing-small-med;
-  @include small {
-    font-size: $spacing-base;
-    display: block;
-    align-self: center;
-  }
-}
