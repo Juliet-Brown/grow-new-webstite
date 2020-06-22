@@ -31,7 +31,7 @@ const Contact = () => {
             <p>
               {ContactData.map(item => {
                 return (
-                  <div className={styles.contentContainer}>
+                  <div className={styles.inline}>
                     <AnchorLink href={item.href} className={styles.linkContact}>
                       {item.text}
                     </AnchorLink>

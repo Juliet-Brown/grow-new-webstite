@@ -15,7 +15,7 @@ const FAQs = () => {
             <div className={styles.grid}>
               {item.questions.map((item, i) => {
                 return (
-                  <div className={styles.gridItemContainer} key={i}>
+                  <div className={styles.gridItemImageContainer} key={i}>
                     <div className={styles.headingSmall}>{item.question}</div>
                     <div className={styles.paragraphSmall}>
                       <p dangerouslySetInnerHTML={item.answer} />

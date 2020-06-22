@@ -27,8 +27,17 @@
     width: 47%;
   }
 
-  @include xlarge {
-    width: 22%;
+  @include large {
+    width: 24%;
+  }
+}
+
+.gridItemImageContainer {
+  width: 100%;
+  margin-bottom: $spacing-large;
+
+  @include medium {
+    width: 47%;
   }
 }
 
@@ -46,6 +55,7 @@
   margin-bottom: $spacing-base;
   width: 112%;
   margin-left: -6%;
+
   @include small {
     margin-left: 0;
     width: 100%;
@@ -55,6 +65,7 @@
 .gridImage {
   margin-left: -6%;
   width: 112%;
+
   @include small {
     margin-left: 0;
     width: 100%;

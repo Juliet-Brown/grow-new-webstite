@@ -15,13 +15,8 @@
 
 .flexItem {
   padding-top: $spacing-large;
-  padding-bottom: $spacing-large;
 
-  @include medium {
-    width: 40%;
-  }
-
-  @include large {
+  @include small {
     width: 47%;
     font-size: $font-size-med;
   }

@@ -7,8 +7,6 @@
 @import "./sass/settings/colors";
 @import "./sass/settings/fonts";
 @import "./sass/settings/spacing";
-
-// Tools
 @import "./sass/settings/breakpoints";
 @import "./sass/settings/mixins";
 
@@ -23,6 +21,7 @@
 // Components
 @import "./sass/components/banner";
 @import "./sass/components/flex";
+@import "./sass/components/inline";
 @import "./sass/components/footer";
 @import "./sass/components/grid";
 @import "./sass/components/gutters";

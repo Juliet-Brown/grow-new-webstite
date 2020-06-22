@@ -16,9 +16,11 @@
 }
 
 .footerLinkContainer {
-  margin: 120px 0;
+  margin-top: 139px;
+  margin-bottom: 139px;
   display: flex;
   flex-direction: column;
+
   @include medium {
     flex-direction: row;
     justify-content: flex-start;
@@ -29,7 +31,6 @@
   color: $color-white;
   margin-bottom: $spacing-base;
   align-self: flex-start;
-  font-size: 18px;
 
   @include medium {
     margin-bottom: 0;
@@ -38,5 +39,9 @@
 }
 
 .footerIcon {
-  margin: 120px 0;
+  margin-bottom: $spacing-xlarge;
+
+  @include medium {
+    margin-top: 139px;
+  }
 }

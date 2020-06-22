@@ -32,15 +32,15 @@ export const indexPageQuery = graphql`
   }
 `
 
-export const pageQuery = graphql`
-  query HeaderImageQuery {
-    headerImage: imageSharp(id: { regex: "/header/" }) {
-      sizes(maxWidth: 1240) {
-        ...GatsbyImageSharpSizes
-      }
-    }
-  }
-`
+// export const pageQuery = graphql`
+//   query HeaderImageQuery {
+//     headerImage: imageSharp(id: { regex: "/header/" }) {
+//       sizes(maxWidth: 1240) {
+//         ...GatsbyImageSharpSizes
+//       }
+//     }
+//   }
+// `
 
 export default class IndexPage extends React.Component<IndexPageProps, {}> {
   public render() {
