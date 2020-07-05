@@ -7,7 +7,7 @@ import HeaderData from "./HeaderData"
 
 const Header = () => {
   return (
-    <header className={styles.gutters}>
+    <header className={styles.gutters} id="top">
       <div className={styles.header}>
         <div className={styles.headerLogo}>
           <img src={growLogo} alt="" />

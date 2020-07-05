@@ -6,14 +6,17 @@
   display: flex;
   flex-direction: column;
   margin: $spacing-medium auto $spacing-medium;
+
   @include small {
     flex-direction: row;
     margin: $spacing-large 0 $spacing-xlarge;
     justify-content: space-between;
   }
+
   @include medium {
     margin: $spacing-xlarge 0 $spacing-xxlarge;
   }
+
   @include large {
     margin: $spacing-xxlarge 0 $spacing-xxxlarge;
   }
@@ -22,11 +25,13 @@
 .headerLogo {
   > img {
     width: $spacing-base * 7.5;
+
     @include small {
       width: $spacing-base * 10;
     }
+
     @include medium {
-      width: 220px$spacing-base * 14;
+      width: 220px $spacing-base * 14;
     }
   }
   margin-bottom: $spacing-xsmall;

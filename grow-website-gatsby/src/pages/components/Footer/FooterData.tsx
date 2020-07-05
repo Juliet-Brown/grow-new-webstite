@@ -15,6 +15,10 @@ const FooterData = {
       name: "Facebook",
       href: "#",
     },
+    {
+      name: "Back to Top",
+      href: "#top",
+    },
   ],
 }
 

@@ -5,6 +5,7 @@
 .headingXSmall {
   font-weight: bold;
   letter-spacing: 0.5px;
+  font-size: 12px;
   text-transform: uppercase;
   margin-bottom: $spacing-small;
 }
@@ -12,30 +13,38 @@
 .headingSmall {
   font-weight: bold;
   line-height: 1.5;
+  font-size: 20px;
   margin-bottom: $spacing-small;
 }
 
 .headingMedium {
-  line-height: 1.17;
-  font-family: $font-family-serif;
+  line-height: 1.5;
+  margin-bottom: $spacing-small;
   width: 100%;
   font-size: $spacing-med-large;
-  margin-bottom: $spacing-xsmall;
+  font-weight: bold;
+
   @include medium {
     font-size: $spacing-large;
-    margin-bottom: $spacing-base;
-    width: 80%;
   }
+
   @include large {
-    font-size: $spacing-xlarge;
-    margin-bottom: $spacing-medium;
+    font-size: 24px;
   }
+}
+
+.headingMediumLight {
+  line-height: 1.5;
+  margin-bottom: $spacing-small;
+  width: 100%;
+  font-size: 24px;
 }
 
 .headingLarge {
   font-family: $font-family-serif;
   font-size: $spacing-xlarge;
   margin-bottom: $spacing-medium;
+
   @include medium {
     font-size: $spacing-xxlarge;
   }

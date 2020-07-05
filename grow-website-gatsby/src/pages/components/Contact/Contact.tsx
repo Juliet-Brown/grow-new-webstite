@@ -11,7 +11,9 @@ const Contact = () => {
         <div className={styles.flexWrapper}>
           <div className={styles.flexItem}>
             <h2>Apply</h2>
-            <p className={styles.uMarginBottomL}>
+            <p
+              className={`${styles.uMarginBottomXXL} ${styles.headingMediumLight}`}
+            >
               Want to learn more about wonderful world of coding? Come along to
               our next free workshop – we’d love to have you!
             </p>
@@ -22,7 +24,9 @@ const Contact = () => {
 
           <div className={styles.flexItem} id="contact">
             <h2>Get in touch</h2>
-            <p className={styles.uMarginBottomL}>
+            <p
+              className={`${styles.uMarginBottomXL} ${styles.headingMediumLight}`}
+            >
               {" "}
               Any questions or suggestions, or want to be up to date on what’s
               happening? Contact us via email or phone, or follow us on social

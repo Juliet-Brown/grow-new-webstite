@@ -11,7 +11,7 @@ const Workshop = () => {
   return (
     <div id="workshop">
       <div className={styles.sectionWorkshop}>
-        <h2>Workshops</h2>
+        <h2 className={styles.uMarginBottomL}>Workshops</h2>
         <div className={styles.headingXSmall}>Upcoming Event</div>
         <div className={styles.workshopImageContainer}>
           <div className={styles.ratioContent}>
@@ -22,7 +22,7 @@ const Workshop = () => {
             />
           </div>
         </div>
-        <h3>{WorkshopData.name}</h3>
+        <h2>{WorkshopData.name}</h2>
         <div className={styles.uWidthSixtyPercent}>
           <div className={styles.headingSubtitle}>
             {Moment(WorkshopData.dateTime).format("ha, dddd do MMMM YYYY")} |{" "}
@@ -45,9 +45,7 @@ const Workshop = () => {
           {!WorkshopData.isWorkshopOpen && (
             <>
               <p
-                className={`${styles.paragraphEmphasis} ${
-                  styles.uMarginBottomS
-                }`}
+                className={`${styles.paragraphEmphasis} ${styles.uMarginBottomS}`}
               >
                 Sorry — this workshop is now fully booked!
               </p>
