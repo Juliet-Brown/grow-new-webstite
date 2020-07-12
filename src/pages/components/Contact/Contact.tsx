@@ -2,7 +2,21 @@ import * as React from "react"
 import * as styles from "../../Index.module.scss"
 import AnchorLink from "react-anchor-link-smooth-scroll"
 
-import ContactData from "./ContactData"
+// import ContactData from "./ContactData"
+
+// const ContactData = typeof window !== `undefined` ? require("module") : null
+const ContactData = [
+  {
+    href: "mailto:grow@springload.co.nz",
+    text: "grow@springload.co.nz",
+  },
+  {
+    href: "tel:64-4-801-8205",
+    text: "+64 4 801 8205",
+  },
+]
+
+// export default ContactData
 
 const Contact = () => {
   return (

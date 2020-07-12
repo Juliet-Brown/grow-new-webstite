@@ -1,8 +1,30 @@
 import * as React from "react"
 import * as styles from "../../Index.module.scss"
 import AnchorLink from "react-anchor-link-smooth-scroll"
-import FooterData from "./FooterData"
 import springloadIcon from "../../../images/springload.svg"
+import instagramIcon from "../../../images/instagram.svg"
+import twitterIcon from "../../../images/twitter.svg"
+
+const FooterData = {
+  sections: [
+    {
+      name: "Twitter",
+      href: "https://www.twitter.com/growbysl",
+    },
+    {
+      name: "Instagram",
+      href: "https://www.instagram.com/growbyspringload",
+    },
+    {
+      name: "Facebook",
+      href: "#",
+    },
+    {
+      name: "Back to Top",
+      href: "#top",
+    },
+  ],
+}
 
 const Footer = () => {
   return (
@@ -22,10 +44,10 @@ const Footer = () => {
               )
             })}
           </div>
-            <div className={styles.footerIcon}>
-              <img src={springloadIcon} />
-            </div>
+          <div className={styles.footerIcon}>
+            <img src={springloadIcon} />
           </div>
+        </div>
       </div>
     </footer>
   )
