@@ -20,7 +20,8 @@ const WorkshopData = {
   isWorkshopOpen: false,
   instagramHref: "https://www.instagram.com/growbyspringload",
   twitterHref: "https://www.twitter.com/growbysl",
-  nextWorkshopAnnounced: "in early 2020!",
+  nextWorkshopAnnounced:
+    "We’ll let you know if you’ve secured a space in the workshop by 5th August.",
 }
 
 const Workshop = () => {
@@ -52,34 +53,20 @@ const Workshop = () => {
             )
           })}
           <div className={styles.uMarginBottomS}>
-            <AnchorLink
-              className={WorkshopData.isWorkshopOpen ? "" : styles.linkDisabled}
-            >
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSd7MIdNliJ_M1RH58qo4Q5TYNxdUYLao_EATktQ7sbt8wK9Sg/viewform">
               Apply for this workshop
-            </AnchorLink>
+            </a>
           </div>
           {!WorkshopData.isWorkshopOpen && (
             <>
               <p
-                className={`${styles.paragraphEmphasis} ${styles.uMarginBottomS}`}
+                className={`${styles.paragraphEmphasis} ${
+                  styles.uMarginBottomS
+                } ${WorkshopData.isWorkshopOpen ? "" : styles.linkDisabled}`}
               >
                 Sorry — this workshop is now fully booked!
               </p>
               <p className={styles.paragraphSmall}>
-                We’ll announce the next one on{" "}
-                <AnchorLink
-                  href={WorkshopData.instagramHref}
-                  className={styles.linkContact}
-                >
-                  Instagram
-                </AnchorLink>{" "}
-                and{" "}
-                <AnchorLink
-                  href={WorkshopData.twitterHref}
-                  className={styles.linkContact}
-                >
-                  Twitter
-                </AnchorLink>{" "}
                 {WorkshopData.nextWorkshopAnnounced}
               </p>
             </>

@@ -32,7 +32,9 @@ const Contact = () => {
               our next free workshop – we’d love to have you!
             </p>
             <p className={styles.uMarginTopS}>
-              <AnchorLink href="#">Apply to our next workshop</AnchorLink>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSd7MIdNliJ_M1RH58qo4Q5TYNxdUYLao_EATktQ7sbt8wK9Sg/viewform">
+                Apply for this workshop
+              </a>
             </p>
           </div>
 
