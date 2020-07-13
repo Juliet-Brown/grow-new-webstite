@@ -8,11 +8,12 @@ const About = () => {
         <h1>Empowering women to thrive in tech</h1>
       </div>
       <p className={styles.uWidthEightyPercent}>
-        Grow is a series of self-contained workshops for women who want to learn
-        the basics of web development. Each workshop provides a fun, practical
-        intro to HTML, CSS, and JavaScript. Run by an all-women, all-volunteer
-        cast of Springloaders, Grow workshops are free, inclusive, safe, and
-        welcoming for even the most novice of newbies.
+        Grow is a free series of workshops dedicated to helping women learn the
+        basics of web development. If you have little or no experience in
+        coding, Grow provides a safe space for you to discover the opportunities
+        in tech. Get a feel for it, see if you like it or not. Maybe even make a
+        career out of it. Or walk away vowing never to touch code again — that’s
+        totally okay too.
       </p>
     </div>
   )

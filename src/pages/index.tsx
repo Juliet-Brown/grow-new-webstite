@@ -48,7 +48,7 @@ export default class IndexPage extends React.Component<IndexPageProps, {}> {
       <>
         <Helmet>
           <html lang="en-NZ" />
-          <title>Grow &endash; Empowering women to thrive in tech</title>
+          <title>Empowering women to thrive in tech</title>
         </Helmet>
         <Header />
         <main className={styles.main}>

@@ -13,8 +13,8 @@ import ushaImage from "../../../images/usha.png"
 
 const PeopleData = {
   description: [
-    "We’re the dedicated, approachable and welcoming team behind Grow. We all work at Springload and have been generously given time and support during our work hours to make Grow what it is.",
-    "Not all of us code (but most of us do). And not all of us knew that tech was where we wanted to end up. Some of us came from eclectic, non-coding backgrounds: graphic design, fine art, creative writing, clock repairing, cabinet making, and photography. But what we all want is to help make learning the basics of web development as fun and accessible as we can for you.",
+    "We’re the dedicated, approachable, and welcoming team behind Grow. We all work at Springload and we all want to make learning the basics of web development as fun and accessible as we can for you.",
+    "Not all of us code (but most of us do). And not all of us knew that tech was where we wanted to end up. Some of us came from non-coding backgrounds: graphic design, fine art, creative writing, clock repairing, cabinet making, and photography.",
   ],
   people: [
     {
