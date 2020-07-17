@@ -1,0 +1,19 @@
+.contactFlex {
+  margin-bottom: 115px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.contactFlexItem {
+  padding-top: $spacing-large;
+
+  @include small {
+    width: 47%;
+    font-size: $font-size-med;
+  }
+
+  @include medium {
+    padding-top: 80px;
+  }
+}

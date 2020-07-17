@@ -29,15 +29,19 @@ const HeaderData = [
 
 const Header = () => {
   return (
-    <header className={styles.gutters} id="top">
-      <div className={styles.header}>
-        <div className={styles.headerLogo}>
-          <img src={growLogo} alt="" />
+    <header id="top">
+      <div className={`${styles.header} ${styles.gutters}`}>
+        <div className={styles.paragraphEmphasis}>
+          <img
+            className={styles.headerGrowLogo}
+            src={growLogo}
+            alt="grow logo"
+          />
         </div>
-        <ul>
+        <ul className={styles.list}>
           {HeaderData.map((section, i) => {
             return (
-              <li key={i}>
+              <li className={styles.listItems} key={i}>
                 <AnchorLink href={section.href}>{section.name}</AnchorLink>
               </li>
             )

@@ -5,13 +5,10 @@
 .linkContact {
   margin-top: $spacing-small;
   word-break: break-all;
-}
-
-.linkDisabled {
-  text-decoration: line-through $color-coral;
-  cursor: not-allowed;
 
   &:hover {
-    text-decoration: line-through $color-coral;
+    text-decoration: none;
+    text-decoration-line: underline;
+    text-decoration-color: $color-coral;
   }
 }

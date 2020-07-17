@@ -32,16 +32,6 @@ export const indexPageQuery = graphql`
   }
 `
 
-// export const pageQuery = graphql`
-//   query HeaderImageQuery {
-//     headerImage: imageSharp(id: { regex: "/header/" }) {
-//       sizes(maxWidth: 1240) {
-//         ...GatsbyImageSharpSizes
-//       }
-//     }
-//   }
-// `
-
 export default class IndexPage extends React.Component<IndexPageProps, {}> {
   public render() {
     return (
@@ -50,16 +40,18 @@ export default class IndexPage extends React.Component<IndexPageProps, {}> {
           <html lang="en-NZ" />
           <title>Empowering women to thrive in tech</title>
         </Helmet>
-        <Header />
-        <main className={styles.main}>
+        <div className={styles.wContainer}>
+          <Header />
           <div className={styles.gutters}>
-            <Banner />
-            <About />
-            <Workshop />
-            <People />
-            <FAQs />
+            <main>
+              <Banner />
+              <About />
+              <Workshop />
+              <People />
+              <FAQs />
+            </main>
           </div>
-        </main>
+        </div>
         <Contact />
         <Footer />
       </>

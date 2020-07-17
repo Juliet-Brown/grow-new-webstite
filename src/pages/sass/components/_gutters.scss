@@ -2,15 +2,41 @@
 // Gutters
 // ----------------------------------------------------------------------------
 
+// .gutters {
+//   margin-right: 5%;
+//   margin-left: 5%;
+
+//   @include small {
+//     margin-right: 7%;
+//     margin-left: 7%;
+//   }
+//   @include medium {
+//     margin-right: 10%;
+//     margin-left: 10%;
+//   }
+// }
+
+.wContainer {
+  max-width: 1440px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+$spacing-large: 104px;
+$spacing-medium: 30px;
+$spacing-small: 16px;
+
 .gutters {
-  margin-right: 5%;
-  margin-left: 5%;
-  @include small {
-    margin-right: 7%;
-    margin-left: 7%;
-  }
+  padding-right: $spacing-small;
+  padding-left: $spacing-small;
+
   @include medium {
-    margin-right: 10%;
-    margin-left: 10%;
+    padding-right: $spacing-medium;
+    padding-left: $spacing-medium;
+  }
+
+  @include large {
+    padding-right: $spacing-large;
+    padding-left: $spacing-large;
   }
 }

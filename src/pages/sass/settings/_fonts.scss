@@ -7,52 +7,60 @@
 
 $base-font-size: 16px;
 
-$font-family-sans-serif: "UntitledSans", Helvetica, sans-serif;
-$font-family-serif: "UntitledSerif";
+$font-family-sans-serif: UntitledSans, sans-serif;
+$font-family-serif: UntitledSerif, serif;
 
 $font-regular: 400;
 $font-bold: 700;
 
 h1,
-h2 {
+h2,
+h3 {
   font-family: $font-family-serif;
 }
 
 h1 {
-  font-size: $font-size-xxheadingLarge;
+  font-size: $font-size-headingLarge;
   font-weight: $font-regular;
+  font-size: 44px;
 
-  @include xsmall {
-    font-size: $font-size-headingLarge;
+  @include medium {
+    font-size: 72px;
+    line-height: 72px;
   }
 }
 
 h2 {
-  font-size: $font-size-xheadingLarge;
+  font-size: 2.5rem;
   font-weight: $font-regular;
   margin: 0 0 $spacing-medium 0;
 
-  @include xsmall {
-    font-size: 2.5rem;
+  @include medium {
+    font-size: 56px;
   }
 }
 
 h3 {
-  font-size: 24px;
   margin: 0 0 $spacing-medium 0;
-  line-height: 1.5;
+  line-height: 32px;
+  font-size: 32px;
+  font-weight: $font-regular;
   margin-bottom: $spacing-small;
   width: 100%;
-  font-weight: bold;
+
+  @include medium {
+    font-size: 48px;
+    line-height: 48px;
+  }
 }
 
 p {
-  font-size: $font-size-small;
-  line-height: 1.67;
-  margin-bottom: $spacing-large;
+  font-size: 17px;
+  line-height: 32px;
 
-  @include xsmall {
-    font-size: $font-size-xxsmall;
+  @include medium {
+    font-size: 18px;
+    line-height: 32px;
   }
 }
 
@@ -70,14 +78,18 @@ ul {
 
 li {
   list-style-type: none;
-  display: inline;
-  padding: $spacing-medium 0 0 $spacing-medium;
+  display: inline-block;
+  // padding: $spacing-medium 0 0 $spacing-medium;
+
+  &:first-child {
+    padding-left: 0;
+  }
 
   @include xsmall {
-    padding: 0 0 0 8px;
+    // padding: 0 0 0 8px;
 
-    &:first-child {
-      padding-left: 0;
-    }
+    // &:first-child {
+    //   padding-left: 0;
+    // }
   }
 }

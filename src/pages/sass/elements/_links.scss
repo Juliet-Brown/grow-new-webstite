@@ -5,11 +5,13 @@
 a {
   color: $color-grey-dark;
   text-decoration: underline solid $color-transparent;
-  font-weight: bold;
   padding-bottom: 3px;
+  font-size: 17px;
 
   &:hover {
     text-decoration: none;
-    border-bottom: 2px $color-coral solid;
+    text-decoration-line: underline;
+    text-decoration-color: $color-coral;
+    // text-decoration-thickness: 3px;
   }
 }

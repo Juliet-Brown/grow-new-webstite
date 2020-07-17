@@ -2,27 +2,6 @@
 // Sections
 // ----------------------------------------------------------------------------
 
-.aboutSection {
-  margin-bottom: 90px;
-
-  @include medium {
-    margin-bottom: $spacing-xxxlarge;
-  }
-}
-
-.sectionAboutHeader {
-  margin-bottom: $spacing-xlarge;
-  width: 60%;
-
-  @include medium {
-    margin-bottom: $spacing-xxxlarge;
-  }
-
-  @include xsmall {
-    width: 100%;
-  }
-}
-
 .sectionContact {
   background-color: $color-pink-light;
   overflow: hidden;
@@ -30,11 +9,4 @@
 
 .sectionFaqs {
   margin-bottom: $spacing-xlarge;
-}
-
-.sectionWorkshop {
-  margin-bottom: $spacing-xlarge;
-  @include medium {
-    margin-bottom: $spacing-xxxlarge;
-  }
 }

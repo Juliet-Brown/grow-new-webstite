@@ -1,19 +1,19 @@
-// ----------------------------------------------------------------------------
-// Banner
-// ----------------------------------------------------------------------------
-
 .bannerImage {
   width: 112%;
+  height: 156px;
   margin-left: -6%;
   margin-right: -6%;
   margin-bottom: $spacing-medium;
 
   @include small {
+    height: 324px;
     width: 100%;
     margin-left: 0;
     margin-right: 0;
   }
-  @include medium {
+
+  @include large {
+    height: 482px;
     margin-bottom: $spacing-xlarge;
   }
 }

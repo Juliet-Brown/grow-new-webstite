@@ -5,11 +5,10 @@
 .header {
   display: flex;
   flex-direction: column;
-  margin: $spacing-medium auto $spacing-medium;
+  margin: 40px auto $spacing-medium;
 
   @include small {
     flex-direction: row;
-    margin: $spacing-large 0 $spacing-xlarge;
     justify-content: space-between;
   }
 
@@ -18,21 +17,39 @@
   }
 
   @include large {
-    margin: $spacing-xxlarge 0 $spacing-xxxlarge;
+    margin: $spacing-xxlarge 0 40px;
+  }
+
+  .list {
+    margin-top: 0;
+  }
+
+  .listItems {
+    padding: 10px 15px;
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:nth-of-type(4) {
+      padding-left: 0;
+    }
+
+    @include small {
+      padding: 10px 21px;
+
+      &:last-child {
+        padding-right: 0;
+      }
+    }
   }
 }
 
-.headerLogo {
-  > img {
-    width: $spacing-base * 7.5;
+.headerGrowLogo {
+  width: 82px;
+  height: 24px;
 
-    @include small {
-      width: $spacing-base * 10;
-    }
-
-    @include medium {
-      width: 220px $spacing-base * 14;
-    }
+  @include medium {
+    margin-top: 10px;
   }
-  margin-bottom: $spacing-xsmall;
 }

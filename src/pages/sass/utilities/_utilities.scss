@@ -11,8 +11,16 @@
   margin-top: $spacing-small;
 }
 
+.uMarginBottomSM {
+  margin-bottom: 20px;
+}
+
 .uMarginBottomM {
   margin-bottom: $spacing-base;
+}
+
+.uMarginTopML {
+  margin-top: $spacing-medium;
 }
 
 .uMarginBottomML {
@@ -20,11 +28,11 @@
 }
 
 .uMarginBottomL {
-  margin-bottom: 56px;
+  margin-bottom: 50px;
 }
 
 .uMarginBottomXL {
-  margin-bottom: 64px;
+  margin-bottom: 63px;
 }
 
 .uMarginBottomXXL {
@@ -40,6 +48,6 @@
 
 .uWidthEightyPercent {
   @include medium {
-    width: 80%;
+    width: 70%;
   }
 }

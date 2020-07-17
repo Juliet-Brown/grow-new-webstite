@@ -7,10 +7,10 @@ import * as styles from "../../Index.module.scss"
 import workshopImage from "../../../images/workshop-image.png"
 
 const WorkshopData = {
-  name: "Introduction to coding basics",
+  name: "Introduction to the basics of JavaScript, HTML, and CSS.",
   image: workshopImage,
   imageAltText: "Participants write code at a Grow workshop",
-  dateTime: "2019-11-13T18:00:00",
+  dateTime: "2020-08-13T18:00:00",
   locationName: "Springload",
   locationAddress: "Level 6, 7 Dixon St, Wellington",
   description: [
@@ -27,9 +27,8 @@ const WorkshopData = {
 const Workshop = () => {
   return (
     <div id="workshop">
-      <div className={styles.sectionWorkshop}>
-        <h2 className={styles.uMarginBottomL}>Workshops</h2>
-        <div className={styles.headingXSmall}>Upcoming Event</div>
+      <div className={styles.workshop}>
+        <h2 className={styles.uMarginBottomSM}>Workshops</h2>
         <div className={styles.workshopImageContainer}>
           <div className={styles.ratioContent}>
             <img
@@ -39,15 +38,20 @@ const Workshop = () => {
             />
           </div>
         </div>
-        <h2>{WorkshopData.name}</h2>
+        <h3 className={`${styles.uMarginBottomML} ${styles.uMarginTopML}`}>
+          {WorkshopData.name}
+        </h3>
         <div className={styles.uWidthSixtyPercent}>
-          <div className={styles.headingSubtitle}>
+          <p className={`${styles.paragraphSmall} ${styles.headingSubtitle}`}>
             {Moment(WorkshopData.dateTime).format("ha, dddd do MMMM YYYY")} |{" "}
             {WorkshopData.locationName}, {WorkshopData.locationAddress}
-          </div>
+          </p>
           {WorkshopData.description.map((paragraph, i) => {
             return (
-              <p className={styles.paragraphSmall} key={i}>
+              <p
+                className={`${styles.paragraphSmall} ${styles.headingSubtitle}`}
+                key={i}
+              >
                 {paragraph}
               </p>
             )
@@ -58,18 +62,11 @@ const Workshop = () => {
             </a>
           </div>
           {!WorkshopData.isWorkshopOpen && (
-            <>
-              <p
-                className={`${styles.paragraphEmphasis} ${
-                  styles.uMarginBottomS
-                } ${WorkshopData.isWorkshopOpen ? "" : styles.linkDisabled}`}
-              >
-                Sorry — this workshop is now fully booked!
-              </p>
-              <p className={styles.paragraphSmall}>
-                {WorkshopData.nextWorkshopAnnounced}
-              </p>
-            </>
+            <p
+              className={`${styles.paragraphSmall} ${styles.uMarginBottomXL}  `}
+            >
+              {WorkshopData.nextWorkshopAnnounced}
+            </p>
           )}
           {/* 
           This will help the event information be "machine readable".

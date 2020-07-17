@@ -4,10 +4,12 @@ import * as styles from "../../Index.module.scss"
 const About = () => {
   return (
     <div className={styles.aboutSection} id="about">
-      <div className={styles.sectionAboutHeader}>
-        <h1>Empowering women to thrive in tech</h1>
+      <div className={styles.aboutHeader}>
+        <h1 className={styles.aboutHeading}>
+          Empowering women to thrive in tech
+        </h1>
       </div>
-      <p className={styles.uWidthEightyPercent}>
+      <p className={`${styles.uWidthEightyPercent} ${styles.paragraphLarge}`}>
         Grow is a free series of workshops dedicated to helping women learn the
         basics of web development. If you have little or no experience in
         coding, Grow provides a safe space for you to discover the opportunities

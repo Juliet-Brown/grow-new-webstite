@@ -11,33 +11,25 @@
 }
 
 .headingSmall {
-  font-weight: bold;
+  font-weight: 600;
   line-height: 1.5;
   font-size: 20px;
   margin-bottom: $spacing-small;
 }
 
 .headingMedium {
-  line-height: 1.5;
   margin-bottom: $spacing-small;
   width: 100%;
-  font-size: $spacing-med-large;
-  font-weight: bold;
-
-  @include medium {
-    font-size: $spacing-large;
-  }
-
-  @include large {
-    font-size: 24px;
-  }
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 600;
 }
 
 .headingMediumLight {
   line-height: 1.5;
   margin-bottom: $spacing-small;
   width: 100%;
-  font-size: 24px;
+  font-size: 18px;
 }
 
 .headingLarge {
@@ -56,5 +48,5 @@
 
 .headingSubtitle {
   // font-size: $spacing-small;
-  margin-bottom: $spacing-med-large;
+  margin-bottom: 48px;
 }

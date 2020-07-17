@@ -63,11 +63,5 @@
 }
 
 .gridImage {
-  margin-left: -6%;
-  width: 112%;
-
-  @include small {
-    margin-left: 0;
-    width: 100%;
-  }
+  width: 100%;
 }

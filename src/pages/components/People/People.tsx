@@ -13,39 +13,51 @@ import ushaImage from "../../../images/usha.png"
 
 const PeopleData = {
   description: [
-    "We’re the dedicated, approachable, and welcoming team behind Grow. We all work at Springload and we all want to make learning the basics of web development as fun and accessible as we can for you.",
-    "Not all of us code (but most of us do). And not all of us knew that tech was where we wanted to end up. Some of us came from non-coding backgrounds: graphic design, fine art, creative writing, clock repairing, cabinet making, and photography.",
+    {
+      one:
+        "We’re the dedicated, approachable, and welcoming team behind Grow. We all work at Springload and we all want to make learning the basics of web development as fun and accessible as we can for you.",
+      two:
+        "Not all of us code (but most of us do). And not all of us knew that tech was where we wanted to end up. Some of us came from non-coding backgrounds: graphic design, fine art, creative writing, clock repairing, cabinet making, and photography.",
+    },
   ],
   people: [
     {
+      url: "https://www.springload.co.nz/people/katie-day/",
       name: "Katie Day",
       imageSrc: katieImage,
     },
     {
+      url: "https://www.springload.co.nz/people/rachel-bolt/",
       name: "Rachel Bolt",
       imageSrc: rachelImage,
     },
     {
+      url: "https://www.springload.co.nz/people/usha-macdonald/",
       name: "Usha MacDonald",
       imageSrc: ushaImage,
     },
     {
+      url: "https://www.springload.co.nz/people/kelly-todd/",
       name: "Kelly Todd",
       imageSrc: kellyImage,
     },
     {
+      url: "https://www.springload.co.nz/people/gisela-de-la-villa/",
       name: "Gisela de la Villa",
       imageSrc: giselaImage,
     },
     {
+      url: "https://www.springload.co.nz/people/lydie-danet/",
       name: "Lydie Danet",
       imageSrc: lydieImage,
     },
     {
+      url: "https://www.springload.co.nz/people/cate-palmer/",
       name: "Cate Palmer",
       imageSrc: cateImage,
     },
     {
+      url: "https://www.springload.co.nz/people/juliet-brown/",
       name: "Juliet Brown",
       imageSrc: julietImage,
     },
@@ -60,9 +72,10 @@ const People = () => {
         <div className={styles.uWidthSixtyPercent}>
           {PeopleData.description.map((paragraph, i) => {
             return (
-              <p className={styles.paragraphSmall} key={i}>
-                {paragraph}
-              </p>
+              <div className={styles.paragraphSmall}>
+                <p className={styles.paragraphSmall}>{paragraph.one}</p>
+                <p className={styles.paragraphSmall}>{paragraph.two}</p>
+              </div>
             )
           })}
         </div>
@@ -75,14 +88,18 @@ const People = () => {
               <div className={styles.imageContainer} key={i}>
                 <div className={styles.gridItem}>
                   <div className={styles.ratioContent}>
-                    <img
-                      src={person.imageSrc}
-                      className={styles.gridImage}
-                      alt=""
-                    />
+                    <a href={person.url}>
+                      <img
+                        src={person.imageSrc}
+                        className={styles.gridImage}
+                        alt={`${person.name} photo`}
+                      />
+                    </a>
                   </div>
                 </div>
-                <div className={styles.headingSmall}>{person.name}</div>
+                <a href={person.url}>
+                  <div className={styles.headingSmall}>{person.name}</div>
+                </a>
               </div>
             )
           })}

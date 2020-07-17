@@ -1,11 +1,16 @@
-// ----------------------------------------------------------------------------
-// Images
-// ----------------------------------------------------------------------------
+.workshop {
+  margin-bottom: $spacing-xlarge;
+
+  @include medium {
+    margin-bottom: $spacing-xxxlarge;
+  }
+}
 
 .workshopImageContainer {
   @include aspect-ratio(5, 2);
   margin-bottom: $spacing-base;
   margin-left: -6%;
+  margin-right: -6%;
   width: 112%;
 
   @include small {
