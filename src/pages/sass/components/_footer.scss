@@ -1,7 +1,6 @@
 // ----------------------------------------------------------------------------
 // Footer
 // ----------------------------------------------------------------------------
-
 .footer {
   background: $color-grey-dark;
 }
@@ -16,12 +15,14 @@
 }
 
 .footerLinkContainer {
-  margin-top: 89px;
-  margin-bottom: 89px;
+  margin-top: 69px;
+  margin-bottom: 69px;
   display: flex;
   flex-direction: column;
 
-  @include medium {
+  @include large {
+    margin-top: 89px;
+    margin-bottom: 89px;
     flex-direction: row;
     justify-content: flex-start;
   }

@@ -8,7 +8,7 @@
 .contactFlexItem {
   padding-top: $spacing-large;
 
-  @include small {
+  @include large {
     width: 47%;
     font-size: $font-size-med;
   }

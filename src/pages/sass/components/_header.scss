@@ -36,15 +36,23 @@
     padding-left: 0;
   }
 
-  @include small {
-    padding: 10px 34px;
+  @include medium {
+    padding: 10px 20px;
 
     &:nth-of-type(4) {
-      padding-left: 34px;
+      padding-left: 20px;
     }
 
     &:last-child {
       padding-right: 0;
+    }
+  }
+
+  @include large {
+    padding: 10px 34px;
+
+    &:nth-of-type(4) {
+      padding-left: 34px;
     }
   }
 }

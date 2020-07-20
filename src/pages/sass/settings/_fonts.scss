@@ -37,7 +37,7 @@ h2 {
   font-weight: $font-regular;
   margin: 0 0 $spacing-medium 0;
 
-  @include medium {
+  @include small {
     font-size: 56px;
   }
 }

@@ -10,7 +10,7 @@
   width: 70%;
   width: 90%;
 
-  @include medium {
+  @include large {
     width: 55%;
     margin-bottom: $spacing-xxxlarge;
   }

@@ -21,6 +21,10 @@
 
 .uMarginTopML {
   margin-top: $spacing-medium;
+
+  @include medium {
+    margin-bottom: 40px;
+  }
 }
 
 .uMarginBottomML {
@@ -45,13 +49,13 @@
 
 // Widths
 .uWidthSixtyPercent {
-  @include medium {
+  @include large {
     width: 60%;
   }
 }
 
 .uWidthEightyPercent {
-  @include medium {
+  @include large {
     width: 70%;
   }
 }
