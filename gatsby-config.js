@@ -3,6 +3,14 @@
  *
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
+const activeEnv =
+  process.env.ENVIRONMENT || process.env.NODE_ENV || "development"
+
+console.log(`Using environment config: '${activeEnv}'`)
+
+require("dotenv").config({
+  path: `.env.${activeEnv}`,
+})
 
 module.exports = {
   siteMetadata: {
@@ -40,6 +48,12 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/images/`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-s3`,
+      options: {
+          bucketName: process.env.BUCKET_NAME
       },
     },
   ],
