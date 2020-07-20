@@ -21,7 +21,8 @@
     "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-dom": "^16.12.0",
     "react-helmet": "^6.1.0",
-    "react-schemaorg": "^1.1.0"
+    "react-schemaorg": "^1.1.0",
+    "gatsby-plugin-s3": "^0.3"
   },
   "scripts": {
     "build": "gatsby build",
@@ -30,10 +31,11 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "deploy": "gatsby-plugin-s3 deploy --yes"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Grow-by-Springload/grow-website"
+    "url": "https://github.com/springload/grow-website"
   }
 }
