@@ -23,6 +23,7 @@ h1 {
   font-size: $font-size-headingLarge;
   font-weight: $font-regular;
   font-size: 44px;
+  line-height: 44px;
 
   @include medium {
     font-size: 72px;
@@ -31,7 +32,8 @@ h1 {
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 40px;
+  line-height: 40px;
   font-weight: $font-regular;
   margin: 0 0 $spacing-medium 0;
 

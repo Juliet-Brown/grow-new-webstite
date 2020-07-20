@@ -42,15 +42,17 @@ export default class IndexPage extends React.Component<IndexPageProps, {}> {
         </Helmet>
         <div className={styles.wContainer}>
           <Header />
-          <div className={styles.gutters}>
-            <main>
-              <Banner />
+          <Banner />
+          <main>
+            <div className={styles.gutters}>
               <About />
-              <Workshop />
-              <People />
+            </div>
+            <Workshop />
+            <People />
+            <div className={styles.gutters}>
               <FAQs />
-            </main>
-          </div>
+            </div>
+          </main>
         </div>
         <Contact />
         <Footer />

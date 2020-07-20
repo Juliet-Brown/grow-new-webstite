@@ -6,12 +6,17 @@ a {
   color: $color-grey-dark;
   text-decoration: underline solid $color-transparent;
   padding-bottom: 3px;
-  font-size: 17px;
 
   &:hover {
     text-decoration: none;
-    text-decoration-line: underline;
+    // text-decoration-line: underline;
+    text-decoration: underline;
     text-decoration-color: $color-coral;
     // text-decoration-thickness: 3px;
+    font-size: 3em;
   }
+}
+
+.boldLink {
+  font-weight: 700;
 }

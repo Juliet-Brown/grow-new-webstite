@@ -38,11 +38,13 @@ const Header = () => {
             alt="grow logo"
           />
         </div>
-        <ul className={styles.list}>
+        <ul className={styles.headerList}>
           {HeaderData.map((section, i) => {
             return (
-              <li className={styles.listItems} key={i}>
-                <AnchorLink href={section.href}>{section.name}</AnchorLink>
+              <li className={styles.headerListItems} key={i}>
+                <AnchorLink className={styles.headerLink} href={section.href}>
+                  {section.name}
+                </AnchorLink>
               </li>
             )
           })}

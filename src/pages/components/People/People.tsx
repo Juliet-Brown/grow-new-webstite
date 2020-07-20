@@ -67,22 +67,30 @@ const PeopleData = {
 const People = () => {
   return (
     <>
-      <h2 id="people">People</h2>
-      <div className={styles.uMarginBottomML}>
-        <div className={styles.uWidthSixtyPercent}>
-          {PeopleData.description.map((paragraph, i) => {
-            return (
-              <div className={styles.paragraphSmall}>
-                <p className={styles.paragraphSmall}>{paragraph.one}</p>
-                <p className={styles.paragraphSmall}>{paragraph.two}</p>
-              </div>
-            )
-          })}
+      <div className={styles.gutters}>
+        <h2 className={styles.paragraphxSmall} id="people">
+          People
+        </h2>
+        <div className={styles.uMarginBottomML}>
+          <div className={styles.uWidthSixtyPercent}>
+            {PeopleData.description.map((paragraph, i) => {
+              return (
+                <>
+                  <div
+                    className={`${styles.uMarginBottomSM} ${styles.paragraphSmall}`}
+                  >
+                    <p className={styles.paragraphSmall}>{paragraph.one}</p>
+                  </div>
+                  <p className={styles.paragraphSmall}>{paragraph.two}</p>
+                </>
+              )
+            })}
+          </div>
         </div>
       </div>
 
       <div className={styles.uMarginBottomL}>
-        <div className={styles.grid}>
+        <div className={styles.gridPeople}>
           {PeopleData.people.map((person, i) => {
             return (
               <div className={styles.imageContainer} key={i}>
@@ -97,9 +105,11 @@ const People = () => {
                     </a>
                   </div>
                 </div>
-                <a href={person.url}>
-                  <div className={styles.headingSmall}>{person.name}</div>
-                </a>
+                <div className={styles.smallGutters}>
+                  <a href={person.url}>
+                    <div className={styles.headingSmall}>{person.name}</div>
+                  </a>
+                </div>
               </div>
             )
           })}

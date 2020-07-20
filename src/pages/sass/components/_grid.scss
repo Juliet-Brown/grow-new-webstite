@@ -10,6 +10,24 @@
   }
 }
 
+.gridPeople {
+  @include small {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @include medium {
+    padding-right: $spacing-medium;
+    padding-left: $spacing-medium;
+  }
+
+  @include large {
+    padding-right: 104px;
+    padding-left: 104px;
+  }
+}
+
 .contentContainer {
   display: block;
   padding-right: 40px;
@@ -53,8 +71,7 @@
 .gridItem {
   @include aspect-ratio(384, 297);
   margin-bottom: $spacing-base;
-  width: 112%;
-  margin-left: -6%;
+  width: 100%;
 
   @include small {
     margin-left: 0;

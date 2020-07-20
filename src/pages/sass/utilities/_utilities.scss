@@ -25,6 +25,10 @@
 
 .uMarginBottomML {
   margin-bottom: $spacing-medium;
+
+  @include large {
+    margin-bottom: 72px;
+  }
 }
 
 .uMarginBottomL {
