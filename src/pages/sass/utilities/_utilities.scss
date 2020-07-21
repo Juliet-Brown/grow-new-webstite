@@ -41,6 +41,14 @@
 
 .uMarginBottomXL {
   margin-bottom: 63px;
+
+  @include medium {
+    margin-bottom: 40px;
+  }
+
+  @include large {
+    margin-bottom: 63px;
+  }
 }
 
 .uMarginBottomXXL {

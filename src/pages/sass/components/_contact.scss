@@ -1,8 +1,12 @@
 .contactFlex {
-  margin-bottom: 115px;
+  margin-bottom: 80px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  @include medium {
+    margin-bottom: 115px;
+  }
 }
 
 .contactFlexItem {
@@ -14,6 +18,10 @@
   }
 
   @include medium {
+    padding-top: 64px;
+  }
+
+  @include large {
     padding-top: 80px;
   }
 }

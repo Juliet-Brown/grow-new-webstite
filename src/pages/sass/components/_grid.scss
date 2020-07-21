@@ -52,9 +52,10 @@
 
 .gridItemImageContainer {
   width: 100%;
-  margin-bottom: $spacing-large;
+  margin-bottom: 73px;
 
   @include large {
+    margin-bottom: $spacing-large;
     width: 47%;
   }
 }

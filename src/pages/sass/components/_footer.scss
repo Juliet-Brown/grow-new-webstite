@@ -15,22 +15,25 @@
 }
 
 .footerLinkContainer {
-  margin-top: 69px;
-  margin-bottom: 69px;
+  margin-top: 80px;
+  margin-bottom: 56px;
   display: flex;
   flex-direction: column;
+
+  @include medium {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
 
   @include large {
     margin-top: 89px;
     margin-bottom: 89px;
-    flex-direction: row;
-    justify-content: flex-start;
   }
 }
 
 .footerLink {
   color: $color-white;
-  margin-bottom: $spacing-base;
+  margin-bottom: 12px;
   align-self: flex-start;
   font-size: 18px;
 
@@ -41,9 +44,13 @@
 }
 
 .footerIcon {
-  margin-bottom: $spacing-xlarge;
+  margin-bottom: 80px;
 
   @include medium {
+    margin-top: 69px;
+  }
+
+  @include large {
     margin-top: 89px;
   }
 }

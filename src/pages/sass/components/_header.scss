@@ -37,14 +37,18 @@
   }
 
   @include medium {
+    padding: 10px 20px 0 20px;
+
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+
+  @include large {
     padding: 10px 20px;
 
     &:nth-of-type(4) {
       padding-left: 20px;
-    }
-
-    &:last-child {
-      padding-right: 0;
     }
   }
 
@@ -71,9 +75,13 @@
   margin-bottom: 30px;
 
   @include medium {
-    width: 132px;
-    height: 39px;
+    width: 94px;
     margin-bottom: 0;
     margin-top: 10px;
+  }
+
+  @include large {
+    width: 132px;
+    height: 39px;
   }
 }
