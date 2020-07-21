@@ -6,6 +6,10 @@
   @include aspect-ratio(5, 2);
   margin-bottom: $spacing-base;
 
+  @include xlarge {
+    width: 70%;
+  }
+
   @include small {
     margin-left: 0;
     width: 100%;

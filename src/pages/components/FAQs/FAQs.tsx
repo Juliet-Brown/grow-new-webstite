@@ -113,23 +113,18 @@ const FAQs = () => {
       <h2 className={styles.uMarginBottomXL}>Frequently asked questions</h2>
       {FAQData.map(item => {
         return (
-          <>
-            <div className={`${styles.headingXSmall} ${styles.uMarginBottomL}`}>
-              {item.category}
-            </div>
-            <div className={styles.grid}>
-              {item.questions.map((item, i) => {
-                return (
-                  <div className={styles.gridItemImageContainer} key={i}>
-                    <div className={styles.headingMedium}>{item.question}</div>
-                    <div className={styles.paragraphSmall}>
-                      <p>{item.answer} </p>
-                    </div>
+          <div className={styles.grid}>
+            {item.questions.map((item, i) => {
+              return (
+                <div className={styles.gridItemImageContainer} key={i}>
+                  <div className={styles.headingMedium}>{item.question}</div>
+                  <div className={styles.paragraphSmall}>
+                    <p>{item.answer} </p>
                   </div>
-                )
-              })}
-            </div>
-          </>
+                </div>
+              )
+            })}
+          </div>
         )
       })}
     </div>

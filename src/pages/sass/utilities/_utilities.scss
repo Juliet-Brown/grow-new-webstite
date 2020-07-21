@@ -60,10 +60,18 @@
   @include large {
     width: 60%;
   }
+
+  @include xlarge {
+    width: 50%;
+  }
 }
 
 .uWidthEightyPercent {
   @include large {
     width: 70%;
+  }
+
+  @include xlarge {
+    width: 50%;
   }
 }

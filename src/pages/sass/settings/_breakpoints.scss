@@ -4,8 +4,8 @@
 
 $breakpoint-s: 600px;
 $breakpoint-m: 834px;
-$breakpoint-l: 1200px;
-$breakpoint-xl: 1800px;
+$breakpoint-l: 1400px;
+$breakpoint-xl: 1900px;
 
 @mixin xsmall {
   @media only screen and (max-width: $breakpoint-s) {

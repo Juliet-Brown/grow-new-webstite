@@ -10,7 +10,8 @@ const WorkshopData = {
   name: "Introduction to the basics of JavaScript, HTML, and CSS.",
   image: workshopImage,
   imageAltText: "Participants write code at a Grow workshop",
-  dateTime: "2020-08-13T18:00:00",
+  day: "6pm, Wednesday",
+  dateTime: "2020-08-09T18:00",
   locationName: "Springload",
   locationAddress: "Level 6, 7 Dixon St, Wellington",
   description: [
@@ -46,7 +47,8 @@ const Workshop = () => {
           </h3>
           <div className={styles.uWidthSixtyPercent}>
             <p className={`${styles.paragraphSmall} ${styles.headingSubtitle}`}>
-              {Moment(WorkshopData.dateTime).format("ha, dddd do MMMM YYYY")} |{" "}
+              {WorkshopData.day}{" "}
+              {Moment(WorkshopData.dateTime).format("DD MMMM YYYY")} |{" "}
               {WorkshopData.locationName}, {WorkshopData.locationAddress}
             </p>
             {WorkshopData.description.map((paragraph, i) => {
