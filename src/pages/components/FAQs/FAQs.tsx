@@ -55,8 +55,10 @@ const FAQData = [
           <>
             No laptop, no problem. We want to make Grow accessible so flick us
             an email at{" "}
-            <a href="grow@springload.co.nz">grow@springload.co.nz</a> , and
-            we’ll source a laptop for you to borrow.
+            <a className={styles.uUnderlineLink} href="grow@springload.co.nz">
+              grow@springload.co.nz
+            </a>{" "}
+            , and we’ll source a laptop for you to borrow.
           </>
         ),
       },

@@ -8,11 +8,10 @@ a {
   padding-bottom: 3px;
 
   &:hover {
+    color: $color-dark-coral;
     text-decoration: none;
-    // text-decoration-line: underline;
     text-decoration: underline;
     text-decoration-color: $color-coral;
-    // text-decoration-thickness: 3px;
   }
 }
 

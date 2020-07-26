@@ -3,17 +3,12 @@
   width: 100%;
   margin-bottom: $spacing-medium;
 
-  @include small {
-    height: 324px;
-  }
-
   @include medium {
     padding-right: $spacing-medium;
     padding-left: $spacing-medium;
   }
 
   @include large {
-    height: 482px;
     padding-right: 104px;
     padding-left: 104px;
     margin-bottom: $spacing-xlarge;

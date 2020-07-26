@@ -28,7 +28,10 @@ const Contact = () => {
                 to our next free workshop – we’d love to have you!
               </p>
               <p>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSd7MIdNliJ_M1RH58qo4Q5TYNxdUYLao_EATktQ7sbt8wK9Sg/viewform">
+                <a
+                  className={styles.uUnderlineLink}
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSd7MIdNliJ_M1RH58qo4Q5TYNxdUYLao_EATktQ7sbt8wK9Sg/viewform"
+                >
                   Apply for this workshop
                 </a>
               </p>
@@ -47,8 +50,8 @@ const Contact = () => {
                   return (
                     <div className={styles.inline}>
                       <AnchorLink
+                        className={styles.uUnderlineLink}
                         href={item.href}
-                        className={styles.linkContact}
                       >
                         {item.text}
                       </AnchorLink>

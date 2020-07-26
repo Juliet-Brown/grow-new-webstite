@@ -1,15 +1,37 @@
 import React from "react"
 import * as styles from "../../Index.module.scss"
 
-import cateImage from "../../../images/cate.png"
-import giselaImage from "../../../images/gisela.png"
-import julietImage from "../../../images/juliet.png"
-import katieImage from "../../../images/katie.png"
+import cateImage from "../../../images/cate-Normal.jpg"
+import cateFunImage from "../../../images/cate-Fun.jpg"
+
+import giselaImage from "../../../images/gisela-Normal.jpg"
+import giselaFunImage from "../../../images/gisela-Fun.jpg"
+
+import julietImage from "../../../images/juliet-Normal.jpg"
+import julietFunImage from "../../../images/juliet-Fun.jpg"
+
+import katieImage from "../../../images/katie-Normal.jpg"
+import katieFunImage from "../../../images/katie-Fun.jpg"
+
 import kellyImage from "../../../images/kelly.png"
-import lydieImage from "../../../images/lydie.png"
-import oisínImage from "../../../images/oisín.png"
-import rachelImage from "../../../images/rachel.png"
-import ushaImage from "../../../images/usha.png"
+
+import lydieImage from "../../../images/lydie-Normal.jpg"
+import lydieFunImage from "../../../images/lydie-Fun.jpg"
+
+import rachelImage from "../../../images/rachel-Normal.jpg"
+import rachelFunImage from "../../../images/rachel-Fun.jpg"
+
+import ushaImage from "../../../images/usha-Normal.jpg"
+import ushaFunImage from "../../../images/usha-Fun.jpg"
+
+import jessImage from "../../../images/jess-Normal.jpg"
+import jessFunImage from "../../../images/jess-Fun.jpg"
+
+// import jessImage from "../../../images/jess-Normal.jpg"
+// import jessFunImage from "../../../images/jess-Fun.jpg"
+
+import michaelaImage from "../../../images/michaela-Normal.jpg"
+import michaelaFunImage from "../../../images/michaela-Fun.jpg"
 
 const PeopleData = {
   description: [
@@ -25,41 +47,60 @@ const PeopleData = {
       url: "https://www.springload.co.nz/people/katie-day/",
       name: "Katie Day",
       imageSrc: katieImage,
+      imageSrcTwo: katieFunImage,
     },
     {
       url: "https://www.springload.co.nz/people/rachel-bolt/",
       name: "Rachel Bolt",
       imageSrc: rachelImage,
+      imageSrcTwo: rachelFunImage,
     },
     {
       url: "https://www.springload.co.nz/people/usha-macdonald/",
       name: "Usha MacDonald",
       imageSrc: ushaImage,
+      imageSrcTwo: ushaFunImage,
     },
     {
       url: "https://www.springload.co.nz/people/kelly-todd/",
       name: "Kelly Todd",
       imageSrc: kellyImage,
+      // imageSrcTwo: kellyFunImage,
     },
     {
       url: "https://www.springload.co.nz/people/gisela-de-la-villa/",
       name: "Gisela de la Villa",
       imageSrc: giselaImage,
+      imageSrcTwo: giselaFunImage,
     },
     {
       url: "https://www.springload.co.nz/people/lydie-danet/",
       name: "Lydie Danet",
       imageSrc: lydieImage,
+      imageSrcTwo: lydieFunImage,
     },
     {
       url: "https://www.springload.co.nz/people/cate-palmer/",
       name: "Cate Palmer",
       imageSrc: cateImage,
+      imageSrcTwo: cateFunImage,
     },
     {
       url: "https://www.springload.co.nz/people/juliet-brown/",
       name: "Juliet Brown",
       imageSrc: julietImage,
+      imageSrcTwo: julietFunImage,
+    },
+    {
+      url: "https://www.springload.co.nz/people/jess-kennair/",
+      name: "Jessica",
+      imageSrc: jessImage,
+      imageSrcTwo: jessFunImage,
+    },
+    {
+      name: "michaela",
+      imageSrc: michaelaImage,
+      imageSrcTwo: michaelaFunImage,
     },
   ],
 }
@@ -93,24 +134,32 @@ const People = () => {
         <div className={styles.gridPeople}>
           {PeopleData.people.map((person, i) => {
             return (
-              <div className={styles.imageContainer} key={i}>
-                <div className={styles.gridItem}>
-                  <div className={styles.ratioContent}>
+              <>
+                <div className={styles.imageContainer} key={i}>
+                  <div className={styles.gridItem}>
+                    <div className={styles.ratioContent}>
+                      <a href={person.url}>
+                        <img
+                          src={person.imageSrc}
+                          onMouseOver={e =>
+                            (e.currentTarget.src = person.imageSrcTwo)
+                          }
+                          onMouseLeave={e =>
+                            (e.currentTarget.src = person.imageSrc)
+                          }
+                          className={styles.gridImage}
+                          alt={`${person.name} photo`}
+                        />
+                      </a>
+                    </div>
+                  </div>
+                  <div className={styles.smallGutters}>
                     <a href={person.url}>
-                      <img
-                        src={person.imageSrc}
-                        className={styles.gridImage}
-                        alt={`${person.name} photo`}
-                      />
+                      <div className={styles.headingSmall}>{person.name}</div>
                     </a>
                   </div>
                 </div>
-                <div className={styles.smallGutters}>
-                  <a href={person.url}>
-                    <div className={styles.headingSmall}>{person.name}</div>
-                  </a>
-                </div>
-              </div>
+              </>
             )
           })}
         </div>

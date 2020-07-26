@@ -63,7 +63,7 @@ const Workshop = () => {
             })}
             <div className={styles.uMarginBottomS}>
               <a
-                className={styles.boldLink}
+                className={` ${styles.boldLink} ${styles.uUnderlineLink}`}
                 href="https://docs.google.com/forms/d/e/1FAIpQLSd7MIdNliJ_M1RH58qo4Q5TYNxdUYLao_EATktQ7sbt8wK9Sg/viewform"
               >
                 Apply for this workshop
