@@ -13,7 +13,7 @@ import julietFunImage from "../../../images/juliet-Fun.jpg"
 import katieImage from "../../../images/katie-Normal.jpg"
 import katieFunImage from "../../../images/katie-Fun.jpg"
 
-import kellyImage from "../../../images/kelly-Norm.jpg"
+import kellyImage from "../../../images/kelly-Normal.jpg"
 import kellyFunImage from "../../../images/kelly-Fun.jpg"
 
 import lydieImage from "../../../images/lydie-Normal.jpg"
@@ -63,7 +63,7 @@ const PeopleData = {
       url: "https://www.springload.co.nz/people/kelly-todd/",
       name: "Kelly Todd",
       imageSrc: kellyImage,
-      // imageSrcTwo: kellyFunImage,
+      imageSrcTwo: kellyFunImage,
     },
     {
       url: "https://www.springload.co.nz/people/gisela-de-la-villa/",
