@@ -2,6 +2,8 @@
 
 Welcome to the website for Grow!
 
+This is built with Gatsby: check out the [Gatsby](https://www.gatsbyjs.org/) docs if you haven't worked with it before :).
+
 ## Getting started
 
 Run the following commands:
@@ -21,5 +23,4 @@ There are currently no tests written. We could also add caching to circleci.
 
 ---
 
-[Design](https://zpl.io/2vOq1Or)
-
+[Design](https://www.figma.com/file/BdYo9zSBJrwwVQPRPT7Rbx/SLM2035-BAU---Grow-website---v2---RB?node-id=0%3A1)
