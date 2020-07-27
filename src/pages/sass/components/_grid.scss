@@ -83,13 +83,13 @@
   width: 100%;
 }
 
-.contianerI {
+.peopleContainer {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
 }
 
-.imaGe {
+.peopleImage {
   width: 100%;
 
   @include medium {

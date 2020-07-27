@@ -130,7 +130,7 @@ const People = () => {
 
       <div className={styles.uMarginBottomL}>
         <div className={styles.gridPeople}>
-          <div className={styles.contianerI}>
+          <div className={styles.peopleContainer}>
             {PeopleData.people.map((person, i) => {
               return (
                 <>
@@ -143,7 +143,7 @@ const People = () => {
                       onMouseLeave={e =>
                         (e.currentTarget.src = person.imageSrc)
                       }
-                      className={styles.imaGe}
+                      className={styles.peopleImage}
                       alt={`${person.name} photo`}
                     />
                     <div className={styles.smallGutters}>
@@ -152,31 +152,6 @@ const People = () => {
                       </a>
                     </div>
                   </a>
-
-                  {/* <div className={styles.imageContainer} key={i}> */}
-                  {/* <div className={styles.gridItem}>
-                    <div className={styles.ratioContent}>
-                      <a href={person.url}>
-                        <img
-                          src={person.imageSrc}
-                          onMouseOver={e =>
-                            (e.currentTarget.src = person.imageSrcTwo)
-                          }
-                          onMouseLeave={e =>
-                            (e.currentTarget.src = person.imageSrc)
-                          }
-                          className={styles.gridImage}
-                          alt={`${person.name} photo`}
-                        />
-                      </a>
-                    </div>
-                  </div> */}
-                  {/* <div className={styles.smallGutters}>
-                    <a href={person.url}>
-                      <div className={styles.headingSmall}>{person.name}</div>
-                    </a>
-                  </div> */}
-                  {/* </div> */}
                 </>
               )
             })}
