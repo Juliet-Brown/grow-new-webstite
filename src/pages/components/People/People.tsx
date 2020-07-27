@@ -13,7 +13,8 @@ import julietFunImage from "../../../images/juliet-Fun.jpg"
 import katieImage from "../../../images/katie-Normal.jpg"
 import katieFunImage from "../../../images/katie-Fun.jpg"
 
-import kellyImage from "../../../images/kelly.png"
+import kellyImage from "../../../images/kelly-Norm.jpg"
+import kellyFunImage from "../../../images/kelly-Fun.jpg"
 
 import lydieImage from "../../../images/lydie-Normal.jpg"
 import lydieFunImage from "../../../images/lydie-Fun.jpg"
@@ -26,9 +27,6 @@ import ushaFunImage from "../../../images/usha-Fun.jpg"
 
 import jessImage from "../../../images/jess-Normal.jpg"
 import jessFunImage from "../../../images/jess-Fun.jpg"
-
-// import jessImage from "../../../images/jess-Normal.jpg"
-// import jessFunImage from "../../../images/jess-Fun.jpg"
 
 import michaelaImage from "../../../images/michaela-Normal.jpg"
 import michaelaFunImage from "../../../images/michaela-Fun.jpg"

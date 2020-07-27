@@ -51,6 +51,12 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        icon: "src/images/grow-favicon.svg",
+      },
+    },
+    {
       resolve: `gatsby-plugin-s3`,
       options: {
         bucketName: process.env.BUCKET_NAME,

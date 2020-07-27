@@ -1,5 +1,5 @@
-import * as React from "react"
-import * as styles from "../../Index.module.scss"
+import React from "react"
+import styles from "../../Index.module.scss"
 import AnchorLink from "react-anchor-link-smooth-scroll"
 
 const ContactData = [
@@ -42,8 +42,8 @@ const Contact = () => {
               <p
                 className={`${styles.headingMediumLight} ${styles.uMarginBottomL}`}
               >
-                Any questions or keen to get involved? Contact us through
-                email,phone, or social meidia.
+                Any questions or keen to get involved? Contact us through email,
+                phone, or social meidia.
               </p>
               <p>
                 {ContactData.map(item => {

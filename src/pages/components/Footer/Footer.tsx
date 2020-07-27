@@ -35,7 +35,7 @@ const Footer = () => {
             </div>
             <div className={styles.footerIcon}>
               <a href="https://www.springload.co.nz/">
-                <img src={springloadIcon} />
+                <img src={springloadIcon} alt="springload" />
               </a>
             </div>
           </div>
