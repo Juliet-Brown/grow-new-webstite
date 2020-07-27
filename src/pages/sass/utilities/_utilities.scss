@@ -89,3 +89,15 @@
   text-decoration: underline;
   text-decoration-color: $color-coral;
 }
+
+.uUnderlineParagraphLink {
+  text-decoration: underline;
+  font-size: 17px;
+  text-decoration-color: $color-coral;
+  line-height: 32px;
+
+  @include medium {
+    font-size: 18px;
+    line-height: 32px;
+  }
+}
