@@ -70,8 +70,7 @@
 }
 
 .gridItem {
-  @include aspect-ratio(384, 297);
-  margin-bottom: $spacing-base;
+  @include aspect-ratio(405, 297);
   width: 100%;
 
   @include small {
@@ -82,10 +81,27 @@
 
 .gridImage {
   width: 100%;
+}
 
-  // &:hover {
-  //   width: 20px;
-  //   background-image: url('LibraryHoverTrans.png');
-  //   background-color: red;
-  // }
+.contianerI {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.imaGe {
+  width: 100%;
+
+  @include medium {
+    margin: 10px;
+    width: 370px;
+  }
+
+  @include xsmall {
+    margin-left: 0;
+  }
+
+  @include large {
+    width: 270px;
+  }
 }

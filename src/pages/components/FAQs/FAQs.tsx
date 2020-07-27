@@ -112,7 +112,7 @@ const FAQData = [
 const FAQs = () => {
   return (
     <div id="faqs" className={styles.sectionFaqs}>
-      <h2 className={styles.uMarginBottomXL}>Frequently asked questions</h2>
+      <h2 className={styles.uMarginBottomSM}>Frequently asked questions</h2>
       {FAQData.map(item => {
         return (
           <div className={styles.grid}>

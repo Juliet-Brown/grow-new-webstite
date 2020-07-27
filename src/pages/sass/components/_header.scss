@@ -17,7 +17,7 @@
   }
 
   @include large {
-    margin: $spacing-xxlarge 0 40px;
+    margin: $spacing-xxlarge 0 $spacing-xxlarge 40px;
   }
 }
 
@@ -36,11 +36,23 @@
     padding-left: 0;
   }
 
+  &:last-child {
+    padding-left: 0;
+  }
+
   @include medium {
     padding: 10px 20px 0 20px;
 
     &:last-child {
       padding-right: 0;
+    }
+
+    &:nth-of-type(4) {
+      padding-left: 20px;
+    }
+
+    &:last-child {
+      padding-left: 20px;
     }
   }
 

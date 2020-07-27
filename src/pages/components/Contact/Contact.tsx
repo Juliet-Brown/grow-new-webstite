@@ -20,7 +20,7 @@ const Contact = () => {
         <div className={styles.gutters}>
           <div className={styles.contactFlex}>
             <div className={styles.contactFlexItem}>
-              <h2 className={styles.uMarginBottomXL}>Apply</h2>
+              <h2 className={styles.uMarginBottomSM}>Apply</h2>
               <p
                 className={`${styles.headingMediumLight} ${styles.uMarginBottomL}`}
               >
@@ -38,7 +38,7 @@ const Contact = () => {
             </div>
 
             <div className={styles.contactFlexItem} id="contact">
-              <h2 className={styles.uMarginBottomXL}>Get in touch</h2>
+              <h2 className={styles.uMarginBottomSM}>Get in touch</h2>
               <p
                 className={`${styles.headingMediumLight} ${styles.uMarginBottomL}`}
               >

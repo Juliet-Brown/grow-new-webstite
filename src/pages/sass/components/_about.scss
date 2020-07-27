@@ -12,10 +12,14 @@
 
   @include large {
     width: 55%;
-    margin-bottom: $spacing-xxxlarge;
+    margin-bottom: 40px;
   }
 }
 
 .aboutHeading {
   margin: 32px 0;
+
+  @include medium {
+    margin: 40px 0;
+  }
 }

@@ -14,7 +14,14 @@
   font-weight: 600;
   line-height: 1.5;
   font-size: 20px;
+  margin-top: 10px;
   margin-bottom: $spacing-small;
+  margin-left: 0;
+
+  @include medium {
+    margin-top: 22px;
+    margin-left: 10px;
+  }
 }
 
 .headingMedium {

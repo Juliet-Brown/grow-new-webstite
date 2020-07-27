@@ -91,12 +91,12 @@ const PeopleData = {
     },
     {
       url: "https://www.springload.co.nz/people/jess-kennair/",
-      name: "Jessica",
+      name: "Jessica Kennair",
       imageSrc: jessImage,
       imageSrcTwo: jessFunImage,
     },
     {
-      name: "michaela",
+      name: "Michaela Chan",
       imageSrc: michaelaImage,
       imageSrcTwo: michaelaFunImage,
     },
@@ -107,7 +107,7 @@ const People = () => {
   return (
     <>
       <div className={styles.gutters}>
-        <h2 className={styles.paragraphxSmall} id="people">
+        <h2 className={styles.uMarginBottomSM} id="people">
           People
         </h2>
         <div className={styles.uMarginBottomML}>
@@ -130,11 +130,31 @@ const People = () => {
 
       <div className={styles.uMarginBottomL}>
         <div className={styles.gridPeople}>
-          {PeopleData.people.map((person, i) => {
-            return (
-              <>
-                <div className={styles.imageContainer} key={i}>
-                  <div className={styles.gridItem}>
+          <div className={styles.contianerI}>
+            {PeopleData.people.map((person, i) => {
+              return (
+                <>
+                  <a href={person.url}>
+                    <img
+                      src={person.imageSrc}
+                      onMouseOver={e =>
+                        (e.currentTarget.src = person.imageSrcTwo)
+                      }
+                      onMouseLeave={e =>
+                        (e.currentTarget.src = person.imageSrc)
+                      }
+                      className={styles.imaGe}
+                      alt={`${person.name} photo`}
+                    />
+                    <div className={styles.smallGutters}>
+                      <a href={person.url}>
+                        <div className={styles.headingSmall}>{person.name}</div>
+                      </a>
+                    </div>
+                  </a>
+
+                  {/* <div className={styles.imageContainer} key={i}> */}
+                  {/* <div className={styles.gridItem}>
                     <div className={styles.ratioContent}>
                       <a href={person.url}>
                         <img
@@ -150,16 +170,17 @@ const People = () => {
                         />
                       </a>
                     </div>
-                  </div>
-                  <div className={styles.smallGutters}>
+                  </div> */}
+                  {/* <div className={styles.smallGutters}>
                     <a href={person.url}>
                       <div className={styles.headingSmall}>{person.name}</div>
                     </a>
-                  </div>
-                </div>
-              </>
-            )
-          })}
+                  </div> */}
+                  {/* </div> */}
+                </>
+              )
+            })}
+          </div>
         </div>
       </div>
     </>
