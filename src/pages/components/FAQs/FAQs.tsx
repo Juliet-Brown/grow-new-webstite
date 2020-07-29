@@ -58,6 +58,7 @@ const FAQData = [
             <a
               className={styles.uUnderlineParagraphLink}
               href="grow@springload.co.nz"
+              aria-label="Email Grow"
             >
               grow@springload.co.nz
             </a>{" "}

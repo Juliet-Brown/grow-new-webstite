@@ -40,10 +40,11 @@ export default class IndexPage extends React.Component<IndexPageProps, {}> {
           <html lang="en-NZ" />
           <title>Empowering women to thrive in tech</title>
         </Helmet>
-        <div className={styles.wContainer}>
-          <Header />
-          <Banner />
-          <main>
+        <main>
+          <div className={styles.wContainer}>
+            <Header />
+
+            <Banner />
             <div className={styles.gutters}>
               <About />
             </div>
@@ -52,9 +53,9 @@ export default class IndexPage extends React.Component<IndexPageProps, {}> {
             <div className={styles.gutters}>
               <FAQs />
             </div>
-          </main>
-        </div>
-        <Contact />
+          </div>
+          <Contact />
+        </main>
         <Footer />
       </Fragment>
     )

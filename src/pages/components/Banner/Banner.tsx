@@ -4,13 +4,11 @@ import growBannerImage from "../../../images/grow-banner.jpg"
 
 const Banner = () => {
   return (
-    <>
-      <img
-        className={styles.bannerImage}
-        src={growBannerImage}
-        alt="The Grow team"
-      />
-    </>
+    <img
+      className={styles.bannerImage}
+      src={growBannerImage}
+      alt="The Grow team"
+    />
   )
 }
 

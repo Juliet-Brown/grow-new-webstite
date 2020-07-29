@@ -33,11 +33,16 @@ const Footer = () => {
                 )
               })}
             </div>
-            <div className={styles.footerIcon}>
-              <a href="https://www.springload.co.nz/">
-                <img src={springloadIcon} alt="springload" />
-              </a>
-            </div>
+            <a
+              href="https://www.springload.co.nz/"
+              aria-label="Learn more about Springload"
+            >
+              <div>
+                <span
+                  className={`${styles.footerIcon} ${styles.footerIconSpringload}`}
+                ></span>
+              </div>
+            </a>
           </div>
         </div>
       </div>
