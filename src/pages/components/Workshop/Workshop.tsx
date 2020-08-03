@@ -11,7 +11,7 @@ const WorkshopData = {
   image: workshopImage,
   imageAltText: "Participants write code at a Grow workshop",
   day: "6pm, Wednesday",
-  dateTime: "2020-08-09T18:00",
+  dateTime: "2020-08-19T18:00",
   locationName: "Springload",
   locationAddress: "Level 6, 7 Dixon St, Wellington",
   description: [
@@ -63,7 +63,7 @@ const Workshop = () => {
             })}
             <div className={styles.uMarginBottomS}>
               <a
-                className={` ${styles.boldLink} ${styles.uUnderlineParagraphLink}`}
+                className={`${styles.boldLink} ${styles.uUnderlineParagraphLink}`}
                 href="https://docs.google.com/forms/d/e/1FAIpQLSd7MIdNliJ_M1RH58qo4Q5TYNxdUYLao_EATktQ7sbt8wK9Sg/viewform"
               >
                 Apply for this workshop

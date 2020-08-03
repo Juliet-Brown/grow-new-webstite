@@ -134,7 +134,7 @@ const People = () => {
             {PeopleData.people.map((person, i) => {
               return (
                 <>
-                  <a href={person.url}>
+                  <a href={person.url} aria-labelledby={person.name}>
                     <img
                       src={person.imageSrc}
                       onMouseOver={e =>
@@ -144,7 +144,7 @@ const People = () => {
                         (e.currentTarget.src = person.imageSrc)
                       }
                       className={styles.peopleImage}
-                      alt={`${person.name} photo`}
+                      alt=""
                     />
                     <div className={styles.smallGutters}>
                       <a href={person.url}>

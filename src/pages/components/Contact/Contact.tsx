@@ -24,8 +24,8 @@ const Contact = () => {
               <p
                 className={`${styles.headingMediumLight} ${styles.uMarginBottomL}`}
               >
-                Want to learn more about wonderful world of coding? Come along
-                to our next free workshop – we’d love to have you!
+                Want to learn more about the wonderful world of coding? Come
+                along to our next free workshop – we’d love to have you!
               </p>
               <p>
                 <a
@@ -43,21 +43,20 @@ const Contact = () => {
                 className={`${styles.headingMediumLight} ${styles.uMarginBottomL}`}
               >
                 Any questions or keen to get involved? Contact us through email,
-                phone, or social meidia.
+                phone, or social media.
               </p>
               <p>
-                {ContactData.map(item => {
-                  return (
-                    <div className={styles.inline}>
-                      <AnchorLink
-                        className={styles.uUnderlineLink}
-                        href={item.href}
-                      >
-                        {item.text}
-                      </AnchorLink>
-                    </div>
-                  )
-                })}
+                <div className={styles.inline}>
+                  <a
+                    className={styles.uUnderlineLink}
+                    href="mailto:grow@springload.co.nz"
+                  >
+                    grow@springload.co.nz
+                  </a>{" "}
+                  <a className={styles.uUnderlineLink} href="tel:64-4-801-8205">
+                    +64 4 801 8205
+                  </a>
+                </div>
               </p>
             </div>
           </div>

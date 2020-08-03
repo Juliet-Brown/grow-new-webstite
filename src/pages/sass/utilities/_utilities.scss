@@ -88,6 +88,10 @@
 .uUnderlineLink {
   text-decoration: underline;
   text-decoration-color: $color-coral;
+
+  &:first-child {
+    margin-right: 20px;
+  }
 }
 
 .uUnderlineParagraphLink {
