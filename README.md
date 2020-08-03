@@ -10,7 +10,7 @@ Run the following commands:
 
 1. `cd grow-website-gatsby`
 2. `yarn install`
-3. `gatsby develop`
+3. `gatsby develop or yarn start`
 
 You should then be able to visit http://localhost:8000/
 
