@@ -88,7 +88,7 @@ const Workshop = () => {
                 for details about our next workshop.
               </p>
             </div>
-            {!WorkshopData.isWorkshopOpen && (
+            {WorkshopData.isWorkshopOpen && (
               <p
                 className={`${styles.paragraphSmall} ${styles.uMarginBottomXL}  `}
               >
