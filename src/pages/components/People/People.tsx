@@ -114,14 +114,14 @@ const People = () => {
           <div className={styles.uWidthSixtyPercent}>
             {PeopleData.description.map((paragraph, i) => {
               return (
-                <>
+                <div key={i}>
                   <div
                     className={`${styles.uMarginBottomSM} ${styles.paragraphSmall}`}
                   >
                     <p className={styles.paragraphSmall}>{paragraph.one}</p>
                   </div>
                   <p className={styles.paragraphSmall}>{paragraph.two}</p>
-                </>
+                </div>
               )
             })}
           </div>
@@ -133,26 +133,20 @@ const People = () => {
           <div className={styles.peopleContainer}>
             {PeopleData.people.map((person, i) => {
               return (
-                <>
-                  <a href={person.url} aria-labelledby={person.name}>
-                    <img
-                      src={person.imageSrc}
-                      onMouseOver={e =>
-                        (e.currentTarget.src = person.imageSrcTwo)
-                      }
-                      onMouseLeave={e =>
-                        (e.currentTarget.src = person.imageSrc)
-                      }
-                      className={styles.peopleImage}
-                      alt=""
-                    />
-                    <div className={styles.smallGutters}>
-                      <a href={person.url}>
-                        <div className={styles.headingSmall}>{person.name}</div>
-                      </a>
-                    </div>
-                  </a>
-                </>
+                <a key={i} href={person.url} aria-labelledby={person.name}>
+                  <img
+                    src={person.imageSrc}
+                    onMouseOver={e =>
+                      (e.currentTarget.src = person.imageSrcTwo)
+                    }
+                    onMouseLeave={e => (e.currentTarget.src = person.imageSrc)}
+                    className={styles.peopleImage}
+                    alt=""
+                  />
+                  <div className={styles.smallGutters}>
+                    <div className={styles.headingSmall}>{person.name}</div>
+                  </div>
+                </a>
               )
             })}
           </div>

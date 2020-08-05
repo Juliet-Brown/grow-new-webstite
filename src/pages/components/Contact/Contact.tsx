@@ -45,8 +45,8 @@ const Contact = () => {
                 Any questions or keen to get involved? Contact us through email,
                 phone, or social media.
               </p>
-              <p>
-                <div className={styles.inline}>
+              <div className={styles.inline}>
+                <p>
                   <a
                     className={styles.uUnderlineLink}
                     href="mailto:grow@springload.co.nz"
@@ -56,8 +56,8 @@ const Contact = () => {
                   <a className={styles.uUnderlineLink} href="tel:64-4-801-8205">
                     +64 4 801 8205
                   </a>
-                </div>
-              </p>
+                </p>
+              </div>
             </div>
           </div>
         </div>

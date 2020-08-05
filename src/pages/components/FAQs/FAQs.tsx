@@ -116,9 +116,9 @@ const FAQs = () => {
   return (
     <div id="faqs" className={styles.sectionFaqs}>
       <h2 className={styles.uMarginBottomSM}>Frequently asked questions</h2>
-      {FAQData.map(item => {
+      {FAQData.map((item, i) => {
         return (
-          <div className={styles.grid}>
+          <div key={i} className={styles.grid}>
             {item.questions.map((item, i) => {
               return (
                 <div className={styles.gridItemImageContainer} key={i}>

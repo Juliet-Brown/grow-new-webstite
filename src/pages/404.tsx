@@ -12,49 +12,21 @@ import Header from "./components/Header/Header"
 import People from "./components/People/People"
 import Workshop from "./components/Workshop/Workshop"
 
-interface IndexPageProps {
-  data: {
-    site: {
-      siteMetadata: {
-        name: string
-      }
-    }
-  }
-}
-
-export const indexPageQuery = graphql`
-  query IndexPageQuery {
-    site {
-      siteMetadata {
-        name
-      }
-    }
-  }
-`
-
 export default class IndexPage extends React.Component<IndexPageProps, {}> {
   public render() {
     return (
       <Fragment>
-        <Helmet>
-          <html lang="en-NZ" />
-          <title>Empowering women to thrive in tech</title>
-        </Helmet>
-        <main>
-          <div className={styles.wContainer}>
-            <Header />
-            <Banner />
+        <div className={styles.wContainer}>
+          <Header />
+          <main>
             <div className={styles.gutters}>
-              <About />
+              <h1>404</h1>
+              <p className={styles.uMarginBottomML}>
+                Sorry, there has been an error.
+              </p>
             </div>
-            <Workshop />
-            <People />
-            <div className={styles.gutters}>
-              <FAQs />
-            </div>
-          </div>
-          <Contact />
-        </main>
+          </main>
+        </div>
         <Footer />
       </Fragment>
     )
