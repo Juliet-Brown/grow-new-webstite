@@ -62,15 +62,17 @@ const Workshop = () => {
               )
             })}
             <div className={styles.uMarginBottomS}>
-              <p>
-                {/* Commented out until we need for a workshop  */}
-                {/* <a
+              {/* Commented out until we need for a workshop  */}
+              {/* <a
                 className={`${styles.boldLink} ${styles.uUnderlineParagraphLink}`}
                 href="https://docs.google.com/forms/d/e/1FAIpQLSd7MIdNliJ_M1RH58qo4Q5TYNxdUYLao_EATktQ7sbt8wK9Sg/viewform"
               >
                 Apply for this workshop
               </a> */}
-                Applications are now closed. Keep an eye out on our{" "}
+              <p className={styles.boldLink}>Applications are now closed.</p>
+
+              <p className={styles.uMarginBottomXL}>
+                Keep an eye out on our{" "}
                 <a
                   href="https://twitter.com/springloadnz"
                   aria-label="Learn more about Springload"

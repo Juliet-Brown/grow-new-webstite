@@ -96,6 +96,7 @@ const PeopleData = {
       imageSrcTwo: jessFunImage,
     },
     {
+      url: "https://www.springload.co.nz/people/michaela-chan/",
       name: "Michaela Chan",
       imageSrc: michaelaImage,
       imageSrcTwo: michaelaFunImage,
