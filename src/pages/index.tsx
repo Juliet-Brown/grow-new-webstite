@@ -9,7 +9,7 @@ import Contact from "./components/Contact/Contact"
 import FAQs from "./components/FAQs/FAQs"
 import Footer from "./components/Footer/Footer"
 import Header from "./components/Header/Header"
-import Learn from "./components/Learn/Learn"
+import Resources from "./components/Resources/Resources"
 import People from "./components/People/People"
 import Workshop from "./components/Workshop/Workshop"
 
@@ -50,7 +50,7 @@ export default class IndexPage extends React.Component<IndexPageProps, {}> {
             </div>
             <Workshop />
             <People />
-            <Learn />
+            <Resources />
             <div className={styles.gutters}>
               <FAQs />
             </div>

@@ -137,10 +137,12 @@ const People = () => {
                 <a key={i} href={person.url} aria-labelledby={person.name}>
                   <img
                     src={person.imageSrc}
-                    onMouseOver={e =>
+                    onMouseOver={(e) =>
                       (e.currentTarget.src = person.imageSrcTwo)
                     }
-                    onMouseLeave={e => (e.currentTarget.src = person.imageSrc)}
+                    onMouseLeave={(e) =>
+                      (e.currentTarget.src = person.imageSrc)
+                    }
                     className={styles.peopleImage}
                     alt=""
                   />
