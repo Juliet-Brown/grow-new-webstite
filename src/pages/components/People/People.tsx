@@ -28,9 +28,6 @@ import ushaFunImage from "../../../images/usha-Fun.jpg"
 import jessImage from "../../../images/jess-Normal.jpg"
 import jessFunImage from "../../../images/jess-Fun.jpg"
 
-import michaelaImage from "../../../images/michaela-Normal.jpg"
-import michaelaFunImage from "../../../images/michaela-Fun.jpg"
-
 const PeopleData = {
   description: [
     {
@@ -94,12 +91,6 @@ const PeopleData = {
       name: "Jessica Kennair",
       imageSrc: jessImage,
       imageSrcTwo: jessFunImage,
-    },
-    {
-      url: "https://www.springload.co.nz/people/michaela-chan/",
-      name: "Michaela Chan",
-      imageSrc: michaelaImage,
-      imageSrcTwo: michaelaFunImage,
     },
   ],
 }
