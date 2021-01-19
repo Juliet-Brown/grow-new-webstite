@@ -6,3 +6,13 @@
   text-decoration: underline;
   text-decoration-color: $color-coral;
 }
+
+.linkIcon {
+  height: 32px;
+  display: inline-block;
+  margin-right: 12px;
+}
+
+.linkResource {
+  display: flex;
+}
