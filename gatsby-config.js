@@ -3,6 +3,14 @@
  *
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
+const activeEnv =
+  process.env.ENVIRONMENT || process.env.NODE_ENV || "development"
+
+console.log(`Using environment config: '${activeEnv}'`)
+
+require("dotenv").config({
+  path: `.env.${activeEnv}`,
+})
 
 module.exports = {
   siteMetadata: {
@@ -35,10 +43,17 @@ module.exports = {
     `gatsby-plugin-typescript`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/grow-website-gatsby/src/images/`,
+        path: `${__dirname}/src/images/`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-s3`,
+      options: {
+          bucketName: process.env.BUCKET_NAME
       },
     },
   ],

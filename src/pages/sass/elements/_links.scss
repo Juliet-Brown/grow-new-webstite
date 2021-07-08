@@ -1,0 +1,21 @@
+// ----------------------------------------------------------------------------
+// Links
+// ----------------------------------------------------------------------------
+
+a {
+  color: $color-grey-dark;
+  text-decoration: underline solid $color-transparent;
+  padding-bottom: 3px;
+
+  &:hover {
+    text-decoration: none;
+    // text-decoration-line: underline;
+    text-decoration: underline;
+    text-decoration-color: $color-coral;
+    // text-decoration-thickness: 3px;
+  }
+}
+
+.boldLink {
+  font-weight: 700;
+}

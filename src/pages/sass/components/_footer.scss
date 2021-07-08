@@ -1,0 +1,49 @@
+// ----------------------------------------------------------------------------
+// Footer
+// ----------------------------------------------------------------------------
+.footer {
+  background: $color-grey-dark;
+}
+
+.footerContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  @include medium {
+    flex-direction: row;
+  }
+}
+
+.footerLinkContainer {
+  margin-top: 69px;
+  margin-bottom: 69px;
+  display: flex;
+  flex-direction: column;
+
+  @include large {
+    margin-top: 89px;
+    margin-bottom: 89px;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+}
+
+.footerLink {
+  color: $color-white;
+  margin-bottom: $spacing-base;
+  align-self: flex-start;
+  font-size: 18px;
+
+  @include medium {
+    margin-bottom: 0;
+    margin-right: $spacing-large;
+  }
+}
+
+.footerIcon {
+  margin-bottom: $spacing-xlarge;
+
+  @include medium {
+    margin-top: 89px;
+  }
+}

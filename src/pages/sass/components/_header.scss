@@ -1,0 +1,79 @@
+// ----------------------------------------------------------------------------
+// Header
+// ----------------------------------------------------------------------------
+
+.header {
+  display: flex;
+  flex-direction: column;
+  margin: 40px auto $spacing-medium;
+
+  @include small {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @include medium {
+    margin: $spacing-xlarge 0 $spacing-xxlarge;
+  }
+
+  @include large {
+    margin: $spacing-xxlarge 0 40px;
+  }
+}
+
+.headerList {
+  margin-top: 0;
+}
+
+.headerListItems {
+  padding: 10px 15px;
+
+  &:first-child {
+    padding-left: 0;
+  }
+
+  &:nth-of-type(4) {
+    padding-left: 0;
+  }
+
+  @include medium {
+    padding: 10px 20px;
+
+    &:nth-of-type(4) {
+      padding-left: 20px;
+    }
+
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+
+  @include large {
+    padding: 10px 34px;
+
+    &:nth-of-type(4) {
+      padding-left: 34px;
+    }
+  }
+}
+
+.headerLink {
+  font-size: 16px;
+
+  @include medium {
+    font-size: 18px;
+  }
+}
+
+.headerGrowLogo {
+  width: 82px;
+  height: 24px;
+  margin-bottom: 30px;
+
+  @include medium {
+    width: 132px;
+    height: 39px;
+    margin-bottom: 0;
+    margin-top: 10px;
+  }
+}

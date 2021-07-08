@@ -1,0 +1,51 @@
+// ----------------------------------------------------------------------------
+// Headings
+// ----------------------------------------------------------------------------
+
+.headingXSmall {
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-bottom: $spacing-small;
+}
+
+.headingSmall {
+  font-weight: 600;
+  line-height: 1.5;
+  font-size: 20px;
+  margin-bottom: $spacing-small;
+}
+
+.headingMedium {
+  margin-bottom: $spacing-small;
+  width: 100%;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 600;
+}
+
+.headingMediumLight {
+  line-height: 39px;
+  margin-bottom: $spacing-small;
+  width: 100%;
+  font-size: 18px;
+}
+
+.headingLarge {
+  font-family: $font-family-serif;
+  font-size: $spacing-xlarge;
+  margin-bottom: $spacing-medium;
+
+  @include medium {
+    font-size: $spacing-xxlarge;
+  }
+  @include large {
+    font-size: $spacing-xxxlarge;
+    margin-bottom: $spacing-large;
+  }
+}
+
+.headingSubtitle {
+  margin-bottom: 48px;
+}

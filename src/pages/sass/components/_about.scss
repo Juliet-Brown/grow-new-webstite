@@ -1,0 +1,21 @@
+.aboutSection {
+  margin-bottom: 80px;
+
+  @include medium {
+    margin-bottom: $spacing-xxxlarge;
+  }
+}
+
+.aboutHeader {
+  width: 70%;
+  width: 90%;
+
+  @include large {
+    width: 55%;
+    margin-bottom: $spacing-xxxlarge;
+  }
+}
+
+.aboutHeading {
+  margin: 32px 0;
+}

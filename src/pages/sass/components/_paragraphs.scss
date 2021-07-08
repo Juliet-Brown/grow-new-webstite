@@ -1,0 +1,21 @@
+.paragraphxSmall {
+  margin-bottom: 40px;
+}
+
+.paragraphLarge {
+  line-height: 32px;
+  margin-bottom: 48px;
+
+  @include medium {
+    font-size: 24px;
+    line-height: 34px;
+  }
+  @include large {
+    line-height: 40px;
+  }
+}
+
+.paragraphEmphasis {
+  font-size: $spacing-base;
+  font-weight: bold;
+}

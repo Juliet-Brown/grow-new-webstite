@@ -1,0 +1,19 @@
+version: 2.1
+jobs:
+  build:
+    docker:
+      - image: circleci/node
+    steps:
+      - checkout
+      - run:
+          name: Install yarn
+          command: yarn install 
+      - run:
+          name: deploy contents of public folder
+          command: |-
+              set -eu
+              if [ "${CIRCLE_BRANCH}" == "deploy/preview" ] || [ "${CIRCLE_BRANCH}" == "deploy/production" ] ; then
+                export ENVIRONMENT=`basename "${CIRCLE_BRANCH}"`;
+                yarn build;
+                yarn deploy;
+              fi

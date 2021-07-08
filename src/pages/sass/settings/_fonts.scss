@@ -1,0 +1,97 @@
+@import "spacing";
+@import "breakpoints";
+
+// ----------------------------------------------------------------------------
+// Fonts
+// ----------------------------------------------------------------------------
+
+$base-font-size: 16px;
+
+$font-family-sans-serif: UntitledSans, sans-serif;
+$font-family-serif: UntitledSerif, serif;
+
+$font-regular: 400;
+$font-bold: 700;
+
+h1,
+h2,
+h3 {
+  font-family: $font-family-serif;
+}
+
+h1 {
+  font-size: $font-size-headingLarge;
+  font-weight: $font-regular;
+  font-size: 44px;
+  line-height: 44px;
+
+  @include medium {
+    font-size: 72px;
+    line-height: 72px;
+  }
+}
+
+h2 {
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: $font-regular;
+  margin: 0 0 $spacing-medium 0;
+
+  @include small {
+    font-size: 56px;
+  }
+}
+
+h3 {
+  margin: 0 0 $spacing-medium 0;
+  line-height: 32px;
+  font-size: 32px;
+  font-weight: $font-regular;
+  margin-bottom: $spacing-small;
+  width: 100%;
+
+  @include medium {
+    font-size: 48px;
+    line-height: 48px;
+  }
+}
+
+p {
+  font-size: 17px;
+  line-height: 32px;
+
+  @include medium {
+    font-size: 18px;
+    line-height: 32px;
+  }
+}
+
+ul {
+  font-weight: $font-bold;
+  font-size: 16px;
+  display: block;
+  align-self: end;
+  padding: 0;
+
+  @include xlarge {
+    font-size: 18px;
+  }
+}
+
+li {
+  list-style-type: none;
+  display: inline-block;
+  // padding: $spacing-medium 0 0 $spacing-medium;
+
+  &:first-child {
+    padding-left: 0;
+  }
+
+  @include xsmall {
+    // padding: 0 0 0 8px;
+
+    // &:first-child {
+    //   padding-left: 0;
+    // }
+  }
+}

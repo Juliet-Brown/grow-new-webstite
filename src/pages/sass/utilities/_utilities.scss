@@ -1,0 +1,61 @@
+// ----------------------------------------------------------------------------
+// Utilities
+// ----------------------------------------------------------------------------
+
+// Margins
+.uMarginBottomS {
+  margin-bottom: $spacing-small;
+}
+
+.uMarginTopS {
+  margin-top: $spacing-small;
+}
+
+.uMarginBottomSM {
+  margin-bottom: 20px;
+}
+
+.uMarginBottomM {
+  margin-bottom: $spacing-base;
+}
+
+.uMarginTopML {
+  margin-top: $spacing-medium;
+
+  @include medium {
+    margin-bottom: 40px;
+  }
+}
+
+.uMarginBottomML {
+  margin-bottom: $spacing-medium;
+
+  @include large {
+    margin-bottom: 72px;
+  }
+}
+
+.uMarginBottomL {
+  margin-bottom: 50px;
+}
+
+.uMarginBottomXL {
+  margin-bottom: 63px;
+}
+
+.uMarginBottomXXL {
+  margin-bottom: 100px;
+}
+
+// Widths
+.uWidthSixtyPercent {
+  @include large {
+    width: 60%;
+  }
+}
+
+.uWidthEightyPercent {
+  @include large {
+    width: 70%;
+  }
+}

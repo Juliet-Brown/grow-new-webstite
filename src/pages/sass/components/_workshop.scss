@@ -1,0 +1,35 @@
+.workshop {
+  margin-bottom: $spacing-xlarge;
+
+  @include medium {
+    margin-bottom: $spacing-xxxlarge;
+  }
+}
+
+.workshopApplyLink {
+  font-weight: 700;
+}
+
+.workshopImageContainer {
+  @include aspect-ratio(5, 2);
+  margin-bottom: $spacing-base;
+
+  @include small {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+.workshopImage {
+  width: 100%;
+
+  @include medium {
+    padding-right: $spacing-medium;
+    padding-left: $spacing-medium;
+  }
+
+  @include large {
+    padding-right: $spacing-large;
+    padding-left: $spacing-large;
+  }
+}
